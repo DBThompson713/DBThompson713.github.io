@@ -5,7 +5,7 @@ body {
   font-weight: 100;
   color: #fff;
   background-color: #000;
-  background: url("https://images.unsplash.com/photo-1519225924453-b28226426689?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  background: url("../imgs/temp-bg2.jpg");
 }
 
 .angle-bracket {
@@ -63,7 +63,7 @@ body {
 .footer {
   position: fixed;
   bottom: 0;
-  right: 0;
+  right: 5%;
   text-align: center;
 }
 
