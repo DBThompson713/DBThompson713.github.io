@@ -118,11 +118,38 @@ a:active ~ ol li {
   margin-top: 80px;
   font-size: 1.65rem;
   margin-bottom: 1rem;
+  visibility: hidden;
+  opacity: 1;
+  transition: opacity 2s linear;
+  padding: 10px 0;
+}
+
+.my_story:active ~ ol li a {
+  writing-mode: horizontal-tb;
+  transform: rotate(180);
+  margin-top: 80px;
+  margin-left: 1%;
+  font-size: 1.65rem;
+  margin-bottom: 1rem;
   visibility: visible;
   opacity: 1;
   transition: opacity 2s linear;
   padding: 10px 0;
 }
+
+.my_story:active ~ ol li a:nth-of-type(1) {
+  writing-mode: horizontal-tb;
+  transform: rotate(180);
+  margin-top: 80px;
+  margin-left: 1%;
+  font-size: 1.65rem;
+  margin-bottom: 1rem;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear;
+  padding: 10px 0;
+}
+
 a:active ~ ol li:nth-of-type(1) {
   margin-top: 80px;
   visibility: visible;
