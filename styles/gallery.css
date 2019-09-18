@@ -124,6 +124,7 @@ body {
   margin: 0 5px;
   list-style: none;
 }
+
 #slide-select li.prev:hover {
   -webkit-transform: translateX(-2px);
   transform: translateX(-2px);
@@ -141,24 +142,4 @@ body {
 }
 #slide-select .selector.current {
   background-color: white;
-}
-
-.codepen-link {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  height: 40px;
-  width: 40px;
-  z-index: 10;
-  border-radius: 50%;
-  box-sizing: border-box;
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/logo.jpg");
-  background-position: center center;
-  background-size: cover;
-  opacity: 0.5;
-  transition: all 0.25s;
-}
-.codepen-link:hover {
-  opacity: 0.8;
-  box-shadow: 0 2px 6px #0c0c0c;
 }
