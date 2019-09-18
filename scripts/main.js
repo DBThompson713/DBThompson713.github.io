@@ -4,6 +4,7 @@ $(document).ready(function() {
     $(".link-fade").toggleClass("main-link-fade");
     $(".first-link").toggleClass("first-fade");
     $(".second-link").toggleClass("second-fade");
+    $(".shader").toggleClass("shaded");
   });
 });
 
@@ -14,6 +15,7 @@ $(document).ready(function() {
     $(".first-link-two").toggleClass("first-fade");
     $(".second-link-two").toggleClass("second-fade");
     $(".third-link-two").toggleClass("third-fade");
+    $(".shader").toggleClass("shaded");
   });
 });
 
@@ -22,5 +24,6 @@ $(document).ready(function() {
     $(this).toggleClass("swingout");
     $(".first-link-three").toggleClass("main-link-fade");
     $(".first-link-three").toggleClass("first-fade");
+    $(".shader").toggleClass("shaded");
   });
 });
