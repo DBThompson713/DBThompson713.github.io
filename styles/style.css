@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Gayathri&display=swap");
 
+html {
+  min-height: 100%;
+}
+
 body {
   font-family: "Gayathri", sans-serif;
   font-weight: 100;
