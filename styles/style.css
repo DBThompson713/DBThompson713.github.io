@@ -6,7 +6,8 @@ body {
   text-decoration: none;
   color: #fff;
   background-color: #000;
-  background: url("../imgs/temp-bg4.jpg") no-repeat left center fixed;
+  /* background: url("../imgs/temp-bg4.jpg") no-repeat center center fixed; */
+  background: url("../imgs/temp-bg5.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

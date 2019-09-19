@@ -5,6 +5,8 @@
 body {
   background-color: #0c0c0c;
   overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 a.index {
@@ -12,10 +14,12 @@ a.index {
   font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
-  float: right;
+  position: fixed;
+  top: 7%;
+  right: 7%;
   margin-top: 20px;
   margin-right: 7%;
-  z-index: 1000;
+  z-index: 10;
 }
 
 .angle-bracket {
@@ -36,6 +40,7 @@ a.index {
   width: 100%;
   height: 100%;
 }
+
 #slides .slide {
   position: absolute;
   display: flex;
