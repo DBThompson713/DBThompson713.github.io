@@ -37,8 +37,8 @@ html {
   content: "";
   position: absolute;
   display: inline-block;
-  width: 8px;
-  height: 8px;
+  width: 18px;
+  height: 18px;
   border: 1px solid rgba(255, 255, 255, 0.81);
   border-radius: 11px;
   cursor: pointer;
@@ -50,12 +50,12 @@ html {
 .contenedor form input:after {
   content: "" attr(titulo) "";
   position: relative;
-  left: 30px;
+  left: 130px;
   opacity: 0;
   color: white;
-  font-size: 9px;
+  font-size: 0.85rem;
   display: block;
-  min-width: 80px;
+  min-width: 90px;
   transition: all 0.25s linear;
 }
 .contenedor form input:checked:after {
@@ -109,13 +109,37 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #62487C;
+  background-color: #f77c98;
   z-index: 0;
   transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
 }
-.contenedor form .labels label:nth-child(odd) {
-  background-color: #62487C;
+.contenedor form .labels label:nth-child(1) {
+  background-color: #8f3052;
   color: white !important;
+}
+
+.contenedor form .labels label:nth-child(2) {
+  background-color: #682d78;
+}
+
+.contenedor form .labels label:nth-child(3) {
+  background-color: #5d0f50;
+}
+
+.contenedor form .labels label:nth-child(4) {
+  background-color: #32094c;
+}
+
+.contenedor form .labels label:nth-child(5) {
+  background-color: #162741;
+}
+
+.contenedor form .labels label:nth-child(6) {
+  background-color: #18004a;
+}
+
+.contenedor form .labels label:nth-child(7) {
+  background-color: #040217;
 }
 
 /* Fancy style */
