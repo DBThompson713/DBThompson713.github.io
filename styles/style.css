@@ -12,12 +12,16 @@ body {
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
     1px 1px 1px rgba(0, 0, 0, 0.5);
   background-color: #000;
-  /* background: url("../imgs/temp-bg4.jpg") no-repeat center center fixed; */
   background: url("../imgs/temp-bg5.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.shader {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 1.25s linear;
 }
 
 .shaded {
@@ -60,13 +64,13 @@ a {
 }
 
 .side-links ul li:nth-of-type(1) {
-  top: 7%;
+  top: 10%;
 }
 .side-links ul li:nth-of-type(2) {
-  top: 31%;
+  top: 34%;
 }
 .side-links ul li:nth-of-type(3) {
-  top: 58%;
+  top: 61%;
 }
 
 .side-links ul li ol {
@@ -93,8 +97,6 @@ a {
   margin: 0 auto;
   text-align: center;
   padding: auto;
-  /* background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 50px; */
 }
 
 .footer h2 {
@@ -102,7 +104,8 @@ a {
 }
 
 .footer h3 {
-  line-height: 5%;
+  font-size: 1.25rem;
+  line-height: 4%;
   margin-top: 10px;
   font-weight: 200;
 }
@@ -186,7 +189,6 @@ li .third-fade {
 }
 
 h2:first-of-type {
-  /* margin-top: 130px; */
   font-weight: 200;
 }
 
