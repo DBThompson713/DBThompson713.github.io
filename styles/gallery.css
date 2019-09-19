@@ -37,12 +37,13 @@ a.index {
 
 #slides {
   position: relative;
+  margin-top: 0;
   width: 100%;
   height: 100%;
 }
 
 #slides .slide {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   width: 100%;
   height: 100%;
