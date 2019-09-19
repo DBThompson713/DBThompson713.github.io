@@ -4,11 +4,6 @@ html {
   min-height: 100%;
 }
 
-.flip:hover {
-  transform: rotate(180deg);
-  transition-duration: 1s;
-}
-
 body {
   font-family: "Gayathri", sans-serif;
   font-weight: 100;
@@ -120,11 +115,13 @@ a {
   text-decoration: none;
   margin-left: -25px;
   margin-bottom: 10px;
+  transition-duration: 0.15s;
 }
 
 ol li {
   visibility: hidden;
-  opacity: 0.5;
+  opacity: 0;
+  transition-duration: 0.1s;
 }
 
 li .swingout {
@@ -156,7 +153,7 @@ li .main-link-fade {
   margin-bottom: 1rem;
   visibility: visible;
   opacity: 1;
-  transition: opacity 2s linear;
+  transition: opacity 1.5s linear;
   padding: 10px 0;
   z-index: 5;
 }
@@ -165,7 +162,7 @@ li .first-fade {
   margin-top: 80px;
   visibility: visible;
   opacity: 1;
-  transition: opacity 0.7s linear;
+  transition: opacity 0.5s linear;
   padding: 10px 0;
   z-index: 5;
 }
@@ -174,7 +171,7 @@ li .second-fade {
   margin-top: 90px;
   visibility: visible;
   opacity: 1;
-  transition: opacity 1.4s linear;
+  transition: opacity 0.8s linear;
   padding: 10px 0;
   z-index: 5;
 }
