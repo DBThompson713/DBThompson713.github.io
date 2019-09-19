@@ -110,10 +110,25 @@ html {
   justify-content: center;
   align-items: center;
   background-color: #f77c98;
+  background: url("../imgs/blog_bg.jpg");
+  background-size: cover;
   z-index: 0;
   transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
 }
-.contenedor form .labels label:nth-child(1) {
+
+.contenedor form .labels label:nth-child(odd) {
+  background-color: #8f3052;
+  background: url("../imgs/blog_bg2.jpg");
+  background-size: cover;
+  color: white !important;
+}
+
+.slide .content {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+/* .contenedor form .labels label:nth-child(1) {
   background-color: #8f3052;
   color: white !important;
 }
@@ -140,7 +155,7 @@ html {
 
 .contenedor form .labels label:nth-child(7) {
   background-color: #040217;
-}
+} */
 
 /* Fancy style */
 body {
@@ -216,7 +231,4 @@ a {
   text-decoration: none;
   color: inherit;
   transition: all 0.25s linear;
-}
-a:hover {
-  color: rebeccapurple;
 }

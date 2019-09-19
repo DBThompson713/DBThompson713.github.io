@@ -93,6 +93,8 @@ a {
   margin: 0 auto;
   text-align: center;
   padding: auto;
+  /* background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50px; */
 }
 
 .footer h2 {
@@ -110,7 +112,6 @@ a {
   margin-top: 30px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
-  /*   color: #DFA8E4; */
   color: #fff;
   text-decoration: none;
   margin-left: -25px;
@@ -185,7 +186,7 @@ li .third-fade {
 }
 
 h2:first-of-type {
-  margin-top: 130px;
+  /* margin-top: 130px; */
   font-weight: 200;
 }
 
