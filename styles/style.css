@@ -63,10 +63,10 @@ a {
   top: 7%;
 }
 .side-links ul li:nth-of-type(2) {
-  top: 28%;
+  top: 31%;
 }
 .side-links ul li:nth-of-type(3) {
-  top: 52%;
+  top: 58%;
 }
 
 .side-links ul li ol {
@@ -106,7 +106,7 @@ a {
 }
 
 .swinger {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
   margin-top: 30px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
@@ -115,7 +115,7 @@ a {
   text-decoration: none;
   margin-left: -25px;
   margin-bottom: 10px;
-  transition-duration: 0.15s;
+  transition-duration: 0.1s;
 }
 
 ol li {
