@@ -4,6 +4,11 @@ html {
   min-height: 100%;
 }
 
+.flip:hover {
+  transform: rotate(180deg);
+  transition-duration: 1s;
+}
+
 body {
   font-family: "Gayathri", sans-serif;
   font-weight: 100;

@@ -7,7 +7,7 @@ html {
 .contenedor {
   width: 100vw;
   height: 100vh;
-  background: deeppink;
+  background: url("../imgs/temp-bg1.jpg");
   position: fixed;
   top: 0;
   left: 0;
@@ -109,12 +109,12 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2b2b38;
+  background-color: #62487C;
   z-index: 0;
   transition: all 0.75s cubic-bezier(0.75, 0.25, 0, 1.05);
 }
 .contenedor form .labels label:nth-child(odd) {
-  background-color: #f5004f;
+  background-color: #62487C;
   color: white !important;
 }
 
