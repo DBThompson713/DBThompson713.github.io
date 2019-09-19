@@ -5,6 +5,16 @@ $(document).ready(function() {
     $(".first-link").toggleClass("first-fade");
     $(".second-link").toggleClass("second-fade");
     $(".shader").toggleClass("shaded");
+    // TWO
+    $("#two").removeClass("swingout");
+    $(".link-fade-two").removeClass("main-link-fade");
+    $(".first-link-two").removeClass("first-fade");
+    $(".second-link-two").removeClass("second-fade");
+    $(".third-link-two").removeClass("third-fade");
+    // THREE
+    $("#three").removeClass("swingout");
+    $(".first-link-three").removeClass("main-link-fade");
+    $(".first-link-three").removeClass("first-fade");
   });
 });
 
@@ -16,6 +26,15 @@ $(document).ready(function() {
     $(".second-link-two").toggleClass("second-fade");
     $(".third-link-two").toggleClass("third-fade");
     $(".shader").toggleClass("shaded");
+    // ONE
+    $("#one").removeClass("swingout");
+    $(".link-fade").removeClass("main-link-fade");
+    $(".first-link").removeClass("first-fade");
+    $(".second-link").removeClass("second-fade");
+    //THREE
+    $("#three").removeClass("swingout");
+    $(".first-link-three").removeClass("main-link-fade");
+    $(".first-link-three").removeClass("first-fade");
   });
 });
 
@@ -25,6 +44,17 @@ $(document).ready(function() {
     $(".first-link-three").toggleClass("main-link-fade");
     $(".first-link-three").toggleClass("first-fade");
     $(".shader").toggleClass("shaded");
+    // ONE
+    $("#one").removeClass("swingout");
+    $(".link-fade").removeClass("main-link-fade");
+    $(".first-link").removeClass("first-fade");
+    $(".second-link").removeClass("second-fade");
+    // TWO
+    $("#two").removeClass("swingout");
+    $(".link-fade-two").removeClass("main-link-fade");
+    $(".first-link-two").removeClass("first-fade");
+    $(".second-link-two").removeClass("second-fade");
+    $(".third-link-two").removeClass("third-fade");
   });
 });
 
