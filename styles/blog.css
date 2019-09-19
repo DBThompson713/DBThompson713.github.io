@@ -43,6 +43,7 @@ html {
   border-radius: 11px;
   cursor: pointer;
   transition: all 0.25s linear;
+  border: 1px solid #06c0ff;
 }
 .contenedor form input:checked:before {
   background-color: white;
@@ -53,8 +54,8 @@ html {
   left: 130px;
   margin-top: 10px;
   opacity: 0;
-  color: white;
-  font-size: 0.85rem;
+  color: #cdcdcd;
+  font-size: 0.75rem;
   display: block;
   min-width: 90px;
   transition: all 0.25s linear;
@@ -128,35 +129,6 @@ html {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
 }
-
-/* .contenedor form .labels label:nth-child(1) {
-  background-color: #8f3052;
-  color: white !important;
-}
-
-.contenedor form .labels label:nth-child(2) {
-  background-color: #682d78;
-}
-
-.contenedor form .labels label:nth-child(3) {
-  background-color: #5d0f50;
-}
-
-.contenedor form .labels label:nth-child(4) {
-  background-color: #32094c;
-}
-
-.contenedor form .labels label:nth-child(5) {
-  background-color: #162741;
-}
-
-.contenedor form .labels label:nth-child(6) {
-  background-color: #18004a;
-}
-
-.contenedor form .labels label:nth-child(7) {
-  background-color: #040217;
-} */
 
 /* Fancy style */
 body {
