@@ -77,6 +77,7 @@ $(document).ready(function() {
 
     $(this).toggleClass("name-fly");
     $("#tag").toggleClass("tag-fly");
+    $(".main-page-bio").toggleClass("main-page-bio-fadein");
     $(".swinger").toggleClass("dissapear");
     $(".techs").toggleClass("techs-fadein");
     // $(".first-link-three").toggleClass("first-fade");

@@ -19,16 +19,25 @@ body {
   background-size: cover;
 }
 
-/* #main-page-bio {
+.main-page-bio {
   visibility: hidden;
-} */
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
 
-#main-photo {
+.main-photo {
   width: 50%;
   border-radius: 35%;
   position: absolute;
   left: 25%;
   top: 10%;
+}
+
+.main-page-bio-fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.4s linear;
+  transition-delay: 0.1s;
 }
 
 #main-page-bio h1 {
@@ -37,6 +46,27 @@ body {
   font-size: 2rem;
   top: 40%;
   left: 40%;
+}
+
+#bio-tag {
+  position: absolute;
+  top: 47%;
+  left: 8%;
+  font-weight: 100;
+}
+
+.main-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 62%;
+  /* left: 10%; */
+}
+
+.info {
+  height: 75px;
+  width: 75px;
 }
 
 .shader {
@@ -159,7 +189,7 @@ a {
 .techs {
   width: 100%;
   position: absolute;
-  bottom: 55%;
+  bottom: 57%;
   right: 16%;
   display: flex;
   justify-content: space-around;
