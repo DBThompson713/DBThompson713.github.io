@@ -67,10 +67,11 @@ body {
 .info {
   height: 75px;
   width: 75px;
+  border-radius: 10px;
 }
 
 .info:nth-of-type(2) {
-  width: 150px;
+  width: 180px;
 }
 
 .shader {
