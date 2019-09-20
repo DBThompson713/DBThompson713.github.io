@@ -71,7 +71,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $("#name").click(function() {
-    $("#one").hasClass("swingout")
+    $(this).hasClass("name-fly")
       ? $(".shader").removeClass("shaded")
       : $(".shader").addClass("shaded");
 
