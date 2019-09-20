@@ -69,6 +69,10 @@ body {
   width: 75px;
 }
 
+.info:nth-of-type(2) {
+  width: 110px;
+}
+
 .shader {
   background-color: rgba(0, 0, 0, 0.05);
   transition: background-color 1.25s linear;
