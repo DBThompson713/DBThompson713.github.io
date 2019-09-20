@@ -213,9 +213,6 @@ a {
   width: 50px;
 }
 
-#ruby {
-}
-
 .swinger {
   font-size: 1.65rem;
   margin-top: 30px;
@@ -300,4 +297,12 @@ h2:first-of-type {
 
 .second-link {
   margin-top: 40px;
+}
+
+/* PROJECTS SECTION */
+
+.screenshot {
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid #fff;
 }
