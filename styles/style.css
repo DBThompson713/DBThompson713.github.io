@@ -19,12 +19,16 @@ body {
   background-size: cover;
 }
 
+/* #main-page-bio {
+  visibility: hidden;
+} */
+
 #main-photo {
   width: 50%;
   border-radius: 35%;
   position: absolute;
   left: 25%;
-  top: 15%;
+  top: 10%;
 }
 
 #main-page-bio h1 {
@@ -67,6 +71,15 @@ a {
 }
 
 .name-fly {
+  /* -moz-transform: scale(1.4) translate(-50px, -50px);
+  -webkit-transform: scale(0.4) translate(-50px, -50px);
+  -o-transform: scale(2) translate(-50px, -50px);
+  -ms-transform: scale(2) translate(-50px, -50px); */
+  transform: scale(1.4) translate(-12%, -550%);
+  transition-duration: 0.25s;
+}
+
+.tag-fly {
   /* -moz-transform: scale(1.4) translate(-50px, -50px);
   -webkit-transform: scale(0.4) translate(-50px, -50px);
   -o-transform: scale(2) translate(-50px, -50px);
@@ -140,6 +153,33 @@ a {
   line-height: 4%;
   margin-top: 10px;
   font-weight: 200;
+  transition-duration: 0.25s;
+}
+
+.techs {
+  width: 100%;
+  position: absolute;
+  bottom: 55%;
+  right: 16%;
+  display: flex;
+  justify-content: space-around;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+
+.techs-fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.25s linear;
+}
+
+.icon {
+  height: 45px;
+  width: 50px;
+}
+
+#ruby {
 }
 
 .swinger {
@@ -226,9 +266,4 @@ h2:first-of-type {
 
 .second-link {
   margin-top: 40px;
-}
-
-.shader2 {
-  background-color: rgba(0, 0, 0, 0.06);
-  transition: background-color 1.25s linear;
 }

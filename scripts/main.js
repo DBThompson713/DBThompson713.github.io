@@ -69,14 +69,6 @@ $(document).ready(function() {
 
 // Name click
 
-// $(document).ready(function() {
-//   $("#name").click(function() {
-//     $(".shader").hasClass("shaded")
-//       ? $(".shader").removeClass("shaded")
-//       : $(".shader").addClass("shaded2");
-//   });
-// });
-
 $(document).ready(function() {
   $("#name").click(function() {
     $("#one").hasClass("swingout")
@@ -84,8 +76,9 @@ $(document).ready(function() {
       : $(".shader").addClass("shaded");
 
     $(this).toggleClass("name-fly");
-    $("#tag").toggleClass("name-fly");
+    $("#tag").toggleClass("tag-fly");
     $(".swinger").toggleClass("dissapear");
+    $(".techs").toggleClass("techs-fadein");
     // $(".first-link-three").toggleClass("first-fade");
     // ONE
     $("#one").removeClass("swingout");
