@@ -66,3 +66,41 @@ $(document).ready(function() {
     $(".third-link-two").removeClass("third-fade");
   });
 });
+
+// Name click
+
+// $(document).ready(function() {
+//   $("#name").click(function() {
+//     $(".shader").hasClass("shaded")
+//       ? $(".shader").removeClass("shaded")
+//       : $(".shader").addClass("shaded2");
+//   });
+// });
+
+$(document).ready(function() {
+  $("#name").click(function() {
+    $("#one").hasClass("swingout")
+      ? $(".shader").removeClass("shaded")
+      : $(".shader").addClass("shaded");
+
+    $(this).toggleClass("name-fly");
+    $("#tag").toggleClass("name-fly");
+    $(".swinger").toggleClass("dissapear");
+    // $(".first-link-three").toggleClass("first-fade");
+    // ONE
+    $("#one").removeClass("swingout");
+    $(".link-fade").removeClass("main-link-fade");
+    $(".first-link").removeClass("first-fade");
+    $(".second-link").removeClass("second-fade");
+    // TWO
+    $("#two").removeClass("swingout");
+    $(".link-fade-two").removeClass("main-link-fade");
+    $(".first-link-two").removeClass("first-fade");
+    $(".second-link-two").removeClass("second-fade");
+    $(".third-link-two").removeClass("third-fade");
+    // THREE
+    $("#three").removeClass("swingout");
+    $(".first-link-three").removeClass("main-link-fade");
+    $(".first-link-three").removeClass("first-fade");
+  });
+});
