@@ -22,3 +22,54 @@
     font-size: 2.5rem;
   }
 }
+
+@media only screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .footer h2 {
+    font-size: 2.5rem;
+  }
+  .footer h3 {
+    line-height: 5%;
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
+  .side-links ul li a {
+    font-size: 1.4rem;
+  }
+  .side-links ul li ol {
+    list-style: none;
+    font-size: 1.25rem;
+    margin-top: 0.2rem;
+    margin-left: 20px;
+  }
+
+  a.index {
+    font-size: 2.5rem;
+  }
+  .side-links ul li:nth-of-type(1) {
+    top: 0;
+  }
+  .side-links ul li:nth-of-type(2) {
+    top: 29%;
+  }
+  .side-links ul li:nth-of-type(3) {
+    top: 61%;
+  }
+  .name-fly {
+    /* -moz-transform: scale(1.4) translate(-50px, -50px);
+    -webkit-transform: scale(0.4) translate(-50px, -50px);
+    -o-transform: scale(2) translate(-50px, -50px);
+    -ms-transform: scale(2) translate(-50px, -50px); */
+    transform: scale(1.4) translate(-12%, -30%);
+    transition-duration: 0.25s;
+  }
+
+  .tag-fly {
+    /* -moz-transform: scale(1.4) translate(-50px, -50px);
+    -webkit-transform: scale(0.4) translate(-50px, -50px);
+    -o-transform: scale(2) translate(-50px, -50px);
+    -ms-transform: scale(2) translate(-50px, -50px); */
+    transform: scale(1.4) translate(-12%, -100%);
+    transition-duration: 0.25s;
+  }
+}
