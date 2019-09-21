@@ -17,7 +17,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  text-align: center;
 }
 
 .main-page-bio {
@@ -27,7 +26,7 @@ body {
 }
 
 .main-photo {
-  width: 100%;
+  width: 50%;
   border-radius: 35%;
   position: absolute;
   left: 25%;
@@ -83,7 +82,6 @@ body {
 }
 
 .shaded {
-  text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
@@ -102,32 +100,6 @@ a {
   color: #06c0ff;
 }
 
-#name {
-  width: 100%;
-  /* margin-right: 5%; */
-  margin-bottom: 0;
-  transition-duration: 0.15s;
-  text-align: center;
-}
-
-.name-fly {
-  /* -moz-transform: scale(1.4) translate(-50px, -50px);
-  -webkit-transform: scale(0.4) translate(-50px, -50px);
-  -o-transform: scale(2) translate(-50px, -50px);
-  -ms-transform: scale(2) translate(-50px, -50px); */
-  transform: scale(1.4) translate(-12%, -150%);
-  transition-duration: 0.25s;
-}
-
-.tag-fly {
-  /* -moz-transform: scale(1.4) translate(-50px, -50px);
-  -webkit-transform: scale(0.4) translate(-50px, -50px);
-  -o-transform: scale(2) translate(-50px, -50px);
-  -ms-transform: scale(2) translate(-50px, -50px); */
-  transform: scale(1.4) translate(-12%, -100%);
-  transition-duration: 0.25s;
-}
-
 .dissapear {
   visibility: hidden;
   opacity: 0;
@@ -135,6 +107,8 @@ a {
 }
 
 /* End of common styling */
+
+/* START OF SIDE NAVBAR STYLING */
 
 .side-links {
   display: inline;
@@ -165,60 +139,6 @@ a {
   margin-left: -20px;
 }
 
-.index {
-  font-size: 1.5rem;
-  color: #fff;
-  text-decoration: none;
-  position: fixed;
-  top: 7%;
-  right: 7%;
-  z-index: 99;
-}
-
-.footer {
-  position: fixed;
-  bottom: 3%;
-  right: 7%;
-  margin: 0 auto;
-  text-align: center;
-  padding: auto;
-}
-
-.footer h2 {
-  font-size: 2.1rem;
-}
-
-.footer h3 {
-  font-size: 1.25rem;
-  line-height: 4%;
-  margin-top: 10px;
-  font-weight: 200;
-  transition-duration: 0.25s;
-}
-
-.techs {
-  width: 100%;
-  position: absolute;
-  bottom: 57%;
-  right: 16%;
-  display: flex;
-  justify-content: space-around;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.25s linear;
-}
-
-.techs-fadein {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.25s linear;
-}
-
-.icon {
-  height: 45px;
-  width: 50px;
-}
-
 .swinger {
   font-size: 1.65rem;
   margin-top: 30px;
@@ -228,12 +148,6 @@ a {
   text-decoration: none;
   margin-left: -25px;
   margin-bottom: 10px;
-  transition-duration: 0.1s;
-}
-
-ol li {
-  visibility: hidden;
-  opacity: 0;
   transition-duration: 0.1s;
 }
 
@@ -247,6 +161,14 @@ li .swingout {
   transition-duration: 0.25s;
   margin-bottom: -100px;
   z-index: 5;
+}
+
+/* LINK FADE STYLES */
+
+ol li {
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.1s;
 }
 
 a:nth-of-type(3):active {
@@ -303,6 +225,90 @@ h2:first-of-type {
 
 .second-link {
   margin-top: 40px;
+}
+
+/* INDEX ICON STYLE */
+.index {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+  position: fixed;
+  top: 7%;
+  right: 7%;
+  z-index: 99;
+}
+
+/* NAME AND TAG BADGE STYLE */
+
+.footer {
+  position: fixed;
+  bottom: 3%;
+  right: 7%;
+  margin: 0 auto;
+  text-align: center;
+  padding: auto;
+}
+
+.footer h2 {
+  font-size: 2.1rem;
+}
+
+.footer h3 {
+  font-size: 1.25rem;
+  line-height: 4%;
+  margin-top: 10px;
+  font-weight: 200;
+  transition-duration: 0.25s;
+}
+
+#name {
+  width: 100%;
+  margin-right: 5%;
+  margin-bottom: 0;
+  transition-duration: 0.15s;
+}
+
+.name-fly {
+  /* -moz-transform: scale(1.4) translate(-50px, -50px);
+  -webkit-transform: scale(0.4) translate(-50px, -50px);
+  -o-transform: scale(2) translate(-50px, -50px);
+  -ms-transform: scale(2) translate(-50px, -50px); */
+  transform: scale(1.4) translate(-12%, -550%);
+  transition-duration: 0.25s;
+}
+
+.tag-fly {
+  /* -moz-transform: scale(1.4) translate(-50px, -50px);
+  -webkit-transform: scale(0.4) translate(-50px, -50px);
+  -o-transform: scale(2) translate(-50px, -50px);
+  -ms-transform: scale(2) translate(-50px, -50px); */
+  transform: scale(1.4) translate(-12%, -100%);
+  transition-duration: 0.25s;
+}
+
+/* TECHS ON MAIN PAGE INFO */
+
+.techs {
+  width: 100%;
+  position: absolute;
+  bottom: 57%;
+  right: 16%;
+  display: flex;
+  justify-content: space-around;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+
+.techs-fadein {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.25s linear;
+}
+
+.icon {
+  height: 45px;
+  width: 50px;
 }
 
 /* PROJECTS SECTION */
