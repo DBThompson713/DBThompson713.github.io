@@ -52,7 +52,7 @@ body {
 #bio-tag {
   position: absolute;
   top: 49%;
-  left: 8%;
+  left: 18%;
   font-weight: 100;
 }
 
@@ -62,7 +62,6 @@ body {
   justify-content: space-around;
   position: absolute;
   top: 62%;
-  /* left: 10%; */
 }
 
 .info {
@@ -473,8 +472,8 @@ textarea:focus {
   }
 }
 
-@media screen and (max-width: 750px) {
-  .swiper-pagination-bullet {
-    visibility: hidden;
+@media screen and (min-width: 750px) {
+  .swiper-container-vertical > .swiper-pagination-bullets {
+    visibility: visible;
   }
 }
