@@ -95,9 +95,3 @@ body {
   justify-self: center;
   margin: 0 auto;
 }
-
-@media screen and (max-width: 750px) {
-  .swiper-pagination-bullet {
-    visibility: hidden;
-  }
-}
