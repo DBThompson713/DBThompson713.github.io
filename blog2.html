@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>.blog</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        overflow:hidden;
+      }
+      body {
+        background: url("imgs/blog_bg2.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide:nth-of-type(odd) {
+        background: url("imgs/blog_bg1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .swiper-container-vertical > .swiper-pagination-bullets {
+        right: 2%;
+        height: 100px;
+        width: 100px;
+        color:#fff;
+        top: 33%;
+        margin-top: auto;
+        transform: translate3d(0px, -50%, 0);
+      }
+
+      .content{
+          width: 70%;
+          max-width: 700px;
+          color: #fff;
+      }
+
+      .swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 12px 0;
+    display: block;
+    background-color: #fff;
+    opacity: .7;
+}
+
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet:active {
+    margin: 12px 0;
+    display: block;
+    background-color: black;
+    opacity: 1;
+}
+
+      .swiper-pagination-bullet {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: .2;
+}
+
+
+@media screen and (max-width:420px){
+  .swiper-pagination-bullet {
+  visibility: hidden;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+                <div class="content">
+                        <h2>Coderacademy</h2>
+                        <h3>Aug 19th 2019</h3>
+                        <div class="block">
+                            <div class="block">
+                              <span>
+                                <p>
+                                  I started at coder academy today. I'm excited to get at it and be immersed in coding. 
+                                  Gonna be spending a lot of time in North sydney for the next while.
+                                </p>
+                                <p>.</p>
+                                  <p>
+                                      I'm pretty jazzed to start doing something I'm interested. I've worked
+                                      too many jobs and started too many careers solely for money or
+                                      short term gain.
+                                    </p>
+        
+                            </div>
+                        </div>
+                    </div>
+
+
+
+        </div>
+        <div class="swiper-slide">
+
+                <div class="content">
+                        <h1>Sydney Trains</h1>
+                        <h3>Aug 23rd 2019</h3>
+                        <div class="block">
+                            <div class="block">
+                              <span>
+                                <p>My backpack weighs about 25 pounds</p>
+                                <p>I spent an hour and 40 minutes getting to North Sydney today. </p>
+                                <p>This provided me a perfect opportunuty to get that sore back I've been craving</p>
+                                <p>Thanks Sydney Transport!</p>
+                            </div>
+                        </div>
+                      </div>
+
+        </div>
+        <div class="swiper-slide">
+
+                <div class="content">
+                        <h1>One Bitcoin</h1>
+                        <h3>Sept 5th 2019</h3>
+                        <div class="block">
+                            <p>My first project for CA is done!
+                            What greater good does it serve? what world issue does it solve?</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>well... it's a game specifically designed to be annoying. Which i think it accomplishes quite well
+                            Oh. And it has 8 bit graphics. So that's cool</p>
+                        </div>
+                      </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>BARANGAROO</h1>
+                        <h3>Sept 6th 2019</h3>
+                        <div class="block">
+                          We presented at ACS in Barangaroo. Such an awesome space with such an incredible view. It was a lot of fun seeing everyones projects.
+                          <p>I think my project went over pretty well. I think people got the joke. Another lovely day in Sydney.</p>
+        
+                          
+                        </div>
+                    </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>Friday the 13h</h1>
+                        <h3>Sept 13th 2019</h3>
+                        <div class="block">
+                            <p>It's friday the 13th. Super Spooky Yalls. The spookiest occassionally occuring day of the year.</p>
+                            <p> I didn't see a black cat, but I did see a cat</p>
+                            <p>Aaaanyways.</p>
+                            <p>Things are going well at coderacademy. It's been fun to go there and learn everyday. Everyone is awesome.</p>
+        
+                        </div>
+                    </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>Inside on a Rainy day</h1>
+                        <h3>Sept 18th 2019</h3>
+                        <div class="block">
+                          <p>Another long day down at the code mine. Spent all day slaving over a hot tea, sitting in a beanbag 
+                            chair. Thought we lost Angel. Turns out he was only napping.</p>
+                          
+                          <p>&lt;Code&gt; &lt;Code&gt; &lt;Code&gt;</p>
+                          <p>It's wet outside. On the train, it was wet inside. In the code mines the humidity is juuuust right.
+                             Our computer overlords demand a dry environment... and we must comply.</p>
+                          
+                        </div>
+                    </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>Fair Go</h1>
+                        <h3>Sept 19th 2019</h3>
+                        <div class="block">
+                          <p>Today is exactly 1 month since I started at Coderacademy. It's been such a ride so far. We've covered so much already. Learning something new everyday has been
+                          awesome, and is something I look forward to continuing. </p>
+                        </div>
+                      </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>8 years</h1>
+                        <h3>Sept 21st 2019</h3>
+                        <div class="block">
+                          <p>It's been 8 years as of today since Cheyanne and I started dating. We are celebrating this momentous occassion by working on our respective homework and napping.</p>
+                          <p>We had a laugh about how this date no longer REALLY matters as it's almost like we put in 7 years of normal mode gameplay, marriage is more like playing the game in hard mode</p>
+                          
+                         
+
+                        </div>
+                      </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>Everything broke</h1>
+                        <h3>Sept 22st 2019</h3>
+                        <div class="block">
+                          <p>Woke up and jumped into finish up up site only to find out that I some how complete broke the site mechanics. My heart dropped.<p>
+                              <p> After a rollback the site is working again, but much of the responsive design work I did yesterday seems lost.</p>
+                              <p>
+
+                        </div>
+                      </div>
+        </div>
+        <div class="swiper-slide">Slide 10</div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+    </script>
+  </body>
+</html>
