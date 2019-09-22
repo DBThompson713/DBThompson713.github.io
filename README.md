@@ -86,17 +86,37 @@
    <li>the menu headings are closed by removing the swingout class from the unwanted "swingers"</li>
    </ul>
 
-<h2>Screenshots</h2>
+<h1>Screenshots</h1>
 
-![intro](./images/screenshots/one_bitcoin_1_p.jpg)
+<h2>Main Page</h2>
 
-![help](./images/screenshots/one_bitcoin_4_p.jpg)
+![main desktop](./docs/readme_files/screenshots/sc-main-1.jpg)
+![main mobile](./docs/readme_files/screenshots/scm-main-1.jpg)
 
-![gameplay 1](./images/screenshots/one_bitcoin_2_p.jpg)
+<h2>Menu folded out</h2>
 
-![Fgameplay 2](./images/screenshots/one_bitcoin_3_p.jpg)
+![menu out](./docs/readme_files/screenshots/sc-main-2.jpg)
+![menu out](./docs/readme_files/screenshots/scm-main-2.jpg)
 
-![game over screen](./images/screenshots/one_bitcoin_5_p.jpg)
+<h2>Projects Section</h2>
+
+![menu out](./docs/readme_files/screenshots/sc-projects.jpg)
+![menu out](./docs/readme_files/screenshots/scm-projects.jpg)
+
+<h2>Main page contact section</h2>
+
+![menu out](docs/readme_files/screenshots/sc-bio.jpg)
+![menu out](docs/readme_files/screenshots/scm-bio.jpg)
+
+<h2>Gallery Section</h2>
+
+![menu out](docs/readme_files/screenshots/sc-gallery.jpg)
+![menu out](docs/readme_files/screenshots/scm-gallery.jpg)
+
+<h2>Photo feature section</h2>
+
+![menu out](docs/readme_files/screenshots/sc-syd1.jpg)
+![menu out](docs/readme_files/screenshots/scm-syd1.jpg)
 
 </div>
 <br />

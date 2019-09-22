@@ -630,6 +630,14 @@ textarea:focus {
 }
 
 @media (min-width: 1020px) and (orientation: landscape) {
+  .footer h2 {
+    font-size: 3rem;
+  }
+
+  .footer h3 {
+    font-size: 2.25rem;
+    margin-top: 20px;
+  }
   .swinger {
     font-size: 2.2rem;
     margin-top: 15px;
@@ -658,18 +666,18 @@ textarea:focus {
     font-size: 2.75rem;
   }
   .name-fly {
-    -moz-transform: scale(2.4) translate(-25%, -170%);
-    -webkit-transform: scale(2.4) translate(-25%, -170%);
-    -o-transform: scale(2.4) translate(-25%, -170%);
-    -ms-transform: scale(2.4) translate(-25%, -170%);
-    transform: scale(2.4) translate(-25%, -170%);
+    -moz-transform: scale(2.1) translate(-25%, -170%);
+    -webkit-transform: scale(2.1) translate(-24%, -170%);
+    -o-transform: scale(2.1) translate(-24%, -170%);
+    -ms-transform: scale(2.1) translate(-24%, -170%);
+    transform: scale(2.1) translate(-24%, -170%);
   }
   .tag-fly {
-    -moz-transform: scale(2.4) translate(-21%, -100%);
-    -webkit-transform: scale(2.4) translate(-21%, -100%);
-    -o-transform: scale(2.4) translate(-21%, -100%);
-    -ms-transform: scale(2.4) translate(-21%, -100%);
-    transform: scale(2.4) translate(-21%, -100%);
+    -moz-transform: scale(1.8) translate(-21%, -100%);
+    -webkit-transform: scale(1.8) translate(-21%, -100%);
+    -o-transform: scale(1.8) translate(-21%, -100%);
+    -ms-transform: scale(1.8) translate(-21%, -100%);
+    transform: scale(1.8) translate(-21%, -100%);
   }
 
   .icon {
