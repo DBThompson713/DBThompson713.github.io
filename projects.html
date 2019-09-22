@@ -1,218 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Projects</title>
-    <link rel="stylesheet" href="styles/projects.css" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/responsive.css" />
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <meta charset="utf-8" />
+    <title>.blog</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="./styles/blog-project.css" />
   </head>
   <body>
-    <div class="contenedor">
-      <a href="index.html" class="index"
+        <a href="index.html" class="index"
         ><span class="angle-bracket">&lt;</span>index<span class="angle-bracket"
           >&gt;</span
         ></a
       >
-      <form>
-        <input
-          type="radio"
-          id="Slide1"
-          name="slider"
-          titulo="1 Bitcoin"
-          autofocus="autofocus"
-          checked="checked"
-        />
-        <input type="radio" id="Slide2" name="slider" titulo="eCertIT" />
-        <input
-          type="radio"
-          id="Slide3"
-          name="slider"
-          titulo="SGM"
-        />
-        <input
-          type="radio"
-          id="Slide4"
-          name="slider"
-          titulo="JGJ"
-        />
-        <input type="radio" id="Slide5" name="slider" titulo="Desert Garden" />
-        <!--<input type="radio" id="Slide6" name="slider" titulo="TEST" />
-        <input type="radio" id="Slide7" name="slider" titulo="TEST" /> -->
-        <div class="labels">
-          <label class="Slide" for="Slide1" id="Slide1">
-            <div class="content">
-              <a href="https://github.com/DBThompson713/one_bitcoin" target="_blank"><img
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="content">
+            <a
+              href="https://github.com/DBThompson713/one_bitcoin"
+              target="_blank"
+              ><img
                 class="screenshot"
                 src="./imgs/screenshots/one_bitcoin_1_p.jpg"
                 alt="one bitcoin screenshot"
-              /></a>
-              <h1>1 Bitcoin</h1>
-              <h3>Ruby terminal game</h3>
-              <p>
-                A terminal game which makes the user guess the number of items
-                purchasable with 1 Bitcoin
-                As an added wrinkle, the value of 1 bitcoin is taken live on
-                every guess, which changes the correct answer on every guess
-              </p>
-              <a
-                href="https://github.com/DBThompson713/one_bitcoin"
-                target="_blank"
-                ><span class="angle-bracket">&lt;</span>1 Bitcoin on Github<span
-                  class="angle-bracket"
-                  >&gt;</span
-                ></a
-              >
-              <div class="block">
-                <div class="block">
-                  <!-- CONTENT GOES HERE -->
-                </div>
-              </div>
-            </div>
-          </label>
-          <label class="Slide" for="Slide2" id="Slide2">
-            <div class="content">
-             <a href="https://github.com/DBThompson713/eCertIT" target="_blank"><img
+            /></a>
+            <h1>1 Bitcoin</h1>
+            <h3>Ruby terminal game</h3>
+            <p>A terminal game designed to be as confusing as the bitcoin market</p>
+              <p>1 Bitcoin makes the user guess the number of items
+              purchasable with 1 Bitcoin. As an added wrinkle, the value of 1
+              bitcoin is retaken live on every guess, which changes the correct
+              answer each time. An answer may be correct at one moment, then wrong the next</p>
+            
+            <a
+              href="https://github.com/DBThompson713/one_bitcoin"
+              target="_blank"
+              ><span class="angle-bracket">&lt;</span>1 Bitcoin on Github<span
+                class="angle-bracket"
+                >&gt;</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="content">
+            <a href="https://github.com/DBThompson713/eCertIT" target="_blank"
+              ><img
                 src="./imgs/screenshots/ecert.jpg"
                 class="screenshot"
                 alt="eCertIT screenshot"
-              /></a> 
-              <h1>eCertIT</h1>
-              <h3>Website design</h3>
-              <p>
-                A mock up for a eLearning company specialising in IT training.
-              </p>
-              <p></p>
-              <a href="https://github.com/DBThompson713/eCertIT" target="_blank"
-                ><span class="angle-bracket">&lt;</span>eCertIT on github<span
-                  class="angle-bracket"
-                  >&gt;</span
-                ></a
-              >
-              <div class="block">
-                <div class="block"></div>
-              </div>
-            </div>
-          </label>
-          <label class="Slide" for="Slide3" id="Slide3">
-            <div class="content">
-              <a href="https://github.com/DBThompson713/silly_goose_mobile"><img
+            /></a>
+            <h1>eCertIT</h1>
+            <h3>Website design</h3>
+            <p>
+              A mock up for a eLearning company specialising in IT training.
+            </p>
+            <p></p>
+            <a href="https://github.com/DBThompson713/eCertIT" target="_blank"
+              ><span class="angle-bracket">&lt;</span>eCertIT on github<span
+                class="angle-bracket"
+                >&gt;</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="content">
+            <a href="https://github.com/DBThompson713/silly_goose_mobile"
+              ><img
                 src="./imgs/screenshots/sgm.jpg"
                 class="screenshot"
                 alt="eCertIT screenshot"
-              /></a>
-              <h2>Silly Goose Mobile</h2>
-              <h3>Website design</h3>
-              <p>
-                I designed & deployed this site to support
-                the android game Jump Goose Jump which I put out in 2018.The
-                site was previously deployed at www.sillygoosemobile.com, but
-                the domain has been temporarily redirected.
-              </p>
-              <p></p>
-              <a
-                href="https://github.com/DBThompson713/silly_goose_mobile"
-                target="_blank"
-                ><span class="angle-bracket">&lt;</span>sgm on github<span
-                  class="angle-bracket"
-                  >&gt;</span
-                ></a
-              >
-              <div class="block">
-                <div class="block"></div>
-              </div>
-            </div>
-          </label>
-
-          <label class="Slide" for="Slide4" id="Slide4">
-            <div class="content">
-              <a href="https://play.google.com/store/apps/details?id=com.sillygoose.jumpgoosejump&hl=en"><img
+            /></a>
+            <h2>Silly Goose Mobile</h2>
+            <h3>Website design</h3>
+            <p>
+              I designed & deployed this site to support the android game Jump
+              Goose Jump which I put out in 2018.The site was previously
+              deployed at www.sillygoosemobile.com, but the domain has been
+              temporarily redirected.
+            </p>
+            <p></p>
+            <a
+              href="https://github.com/DBThompson713/silly_goose_mobile"
+              target="_blank"
+              ><span class="angle-bracket">&lt;</span>sgm on github<span
+                class="angle-bracket"
+                >&gt;</span
+              ></a
+            >
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="content">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.sillygoose.jumpgoosejump&hl=en"
+              ><img
                 src="./imgs/screenshots/jgj.jpg"
                 class="screenshot"
                 alt="eCertIT screenshot"
-              /></a>
-              <h2>Jump Goose Jump</h2>
-              <h3>Android Game</h3>
-              <p>
-                The day after I received this game I received a
-                warning about describing the main character as a "Canada Goose"
-                as that is a trademarked term for a winter parka company based
-                in Canada. So I changed all materials to refer to the main
-                character as a Canadian Goose.
-              </p>
-              <p></p>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.sillygoose.jumpgoosejump&hl=en"
-                target="_blank"
-                ><span class="angle-bracket">&lt;</span>jgj on play store<span
-                  class="angle-bracket"
-                  >&gt;</span
-                ></a
-              >
-              <div class="block">
-                <div class="block"></div>
-              </div>
-            </div>
-          </label>
-          <label class="Slide" for="Slide5" id="Slide5">
-            <div class="content">
-              <img
-                src="./imgs/screenshots/desertgarden.jpg"
-                class="screenshot"
-                alt="eCertIT screenshot"
-              />
-              <h2>Desert Garden</h1>
-              <h3>website design</h3>
-              <p>
-                I designed this site as a sales and events site for a potential
-                succulent and terrarium company.
-              </p>
-              <p></p>
-
-              <div class="block">
-                <div class="block"></div>
-              </div>
-            </div>
-          </label>
-          <!-- <label for="Slide6" id="Slide6">
-            <div class="content">
-              <h1>Inside on a Rainy day</h1>
-              <h3>Sept 18th 2019</h3>
-              <div class="block">
-                <p>
-                  Another long day down at the code mine. Spent all day slaving
-                  over a hot tea, sitting in a beanbag chair. Thought we lost
-                  Angel. Turns out he was only napping.
-                </p>
-
-                <p>&lt;Code&gt; &lt;Code&gt; &lt;Code&gt;</p>
-                <p>
-                  It's wet outside. On the train, it was wet inside. In the code
-                  mines the humidity is juuuust right. Our computer overlords
-                  demand a dry environment... and we must comply.
-                </p>
-              </div>
-            </div>
-          </label>
-          <label for="Slide7" id="Slide7">
-            <div class="content">
-              <h1>Fair Go</h1>
-              <h3>Sept 19th 2019</h3>
-              <div class="block">
-                Today is exactly 1 month since I started at Coderacademy. It's
-                been such a ride so far. We've covered so much already. Learning
-                something new everyday has been awesome, and is something I look
-                forward to continuing.
-              </div>
-            </div>
-          </label> -->
+            /></a>
+            <h2>Jump Goose Jump</h2>
+            <h3>Android Game</h3>
+            <p>
+              The day after I received this game I received a warning about
+              describing the main character as a "Canada Goose" as that is a
+              trademarked term for a winter parka company based in Canada. So I
+              changed all materials to refer to the main character as a Canadian
+              Goose.
+            </p>
+            <p></p>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.sillygoose.jumpgoosejump&hl=en"
+              target="_blank"
+              ><span class="angle-bracket">&lt;</span>jgj on play store<span
+                class="angle-bracket"
+                >&gt;</span
+              ></a
+            >
+          </div>
         </div>
-      </form>
+        <div class="swiper-slide">
+            <div class="content">
+                <img
+                  src="./imgs/screenshots/desertgarden.jpg"
+                  class="screenshot"
+                  alt="eCertIT screenshot"
+                />
+                <h2>Desert Garden</h1>
+                <h3>website design</h3>
+                <p>
+                  I designed this site as a sales and events site for a potential
+                  succulent and terrarium company.
+                </p>
+                <p></p>
+  
+                
+              </div>
+        </div>
+       
+      </div>
+      <!-- PAGINATION -->
+      <div class="swiper-pagination"></div>
     </div>
+
+    <
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="./scripts/swipe.js"></script>
   </body>
 </html>

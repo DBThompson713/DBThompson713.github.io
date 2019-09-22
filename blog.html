@@ -1,142 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Blog</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/responsive.css">
-    <link rel="stylesheet" href="styles/blog.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <meta charset="utf-8" />
+    <title>.blog</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="./styles/blog-project.css">
+
   </head>
   <body>
-    <div class="contenedor">
-        <a href="index.html" class="index"
-        ><span class="angle-bracket">&lt;</span>index<span class="angle-bracket"
-          >&gt;</span
-        ></a
-      >
-      <form>
-        <input
-          type="radio"
-          id="Slide1"
-          name="slider"
-          titulo="Aug 19th"
-          autofocus="autofocus"
-          checked="checked"
-        />
-        <input type="radio" id="Slide2" name="slider" titulo="Aug 23rd" />
-        <input type="radio" id="Slide3" name="slider" titulo="Sept 5th" />
-        <input type="radio" id="Slide4" name="slider" titulo="Sept 6th" />
-        <input type="radio" id="Slide5" name="slider" titulo="Sept 13th" />
-        <input type="radio" id="Slide6" name="slider" titulo="Sept 18th" />
-        <input type="radio" id="Slide7" name="slider" titulo="Sept 19th" />
-        <div class="labels">
-          <label class="Slide" for="Slide1" id="Slide1">
-            <div class="content">
-                <h2>Coderacademy</h2>
-                <h3>Aug 19th 2019</h3>
-                <div class="block">
-                    <div class="block">
-                      <span>
-                        <p>
-                          I started at coder academy today. I'm excited to get at it and be immersed in coding. 
-                          Gonna be spending a lot of time in North sydney for the next while.
-                        </p>
-                        <p>.</p>
-                          <p>
-                              I'm pretty jazzed to start doing something I'm interested. I've worked
-                              too many jobs and started too many careers solely for money or
-                              short term gain.
-                            </p>
-
+      <a href="index.html" class="index"
+      ><span class="angle-bracket">&lt;</span>index<span class="angle-bracket"
+        >&gt;</span
+      ></a
+    >
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+                <div class="content">
+                        <h2>Coderacademy</h2>
+                        <h3>Aug 19th 2019</h3>
+                        <div class="block">
+                            <div class="block">
+                              <span>
+                                <p>
+                                  I started at coder academy today. I'm excited to get at it and be immersed in coding. 
+                                  Gonna be spending a lot of time in North sydney for the next while.
+                                </p>
+                                <p>.</p>
+                                  <p>
+                                      I'm pretty jazzed to start doing something I'm interested. I've worked
+                                      too many jobs and started too many careers solely for money or
+                                      short term gain.
+                                    </p>
+        
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-          </label>
-          <label class="Slide" for="Slide2" id="Slide2">
-            <div class="content">
-              <h1>Sydney Trains</h1>
-              <h3>Aug 23rd 2019</h3>
-              <div class="block">
-                  <div class="block">
-                    <span>
-                      <p>My backpack weighs about 25 pounds</p>
-                      <p>I spent an hour and 40 minutes getting to North Sydney today. </p>
-                      <p>This provided me a perfect opportunuty to get that sore back I've been craving</p>
-                      <p>Thanks Sydney Transport!</p>
-                  </div>
-              </div>
-            </div>
-          </label>
-          <label class="Slide" for="Slide3" id="Slide3">
-            <div class="content">
-              <h1>One Bitcoin</h1>
-              <h3>Sept 5th 2019</h3>
-              <div class="block">
-                  <p>My first project for CA is done!
-                  What greater good does it serve? what world issue does it solve?</p>
-                  <p>...</p>
-                  <p>...</p>
-                  <p>well... it's a game specifically designed to be annoying. Which i think it accomplishes quite well
-                  Oh. And it has 8 bit graphics. So that's cool</p>
-              </div>
-            </div>
-          </label>
-          <label class="Slide" for="Slide4" id="Slide4">
-            <div class="content">
-                <h1>BARANGAROO</h1>
-                <h3>Sept 6th 2019</h3>
-                <div class="block">
-                  We presented at ACS in Barangaroo. Such an awesome space with such an incredible view. It was a lot of fun seeing everyones projects.
-                  <p>I think my project went over pretty well. I think people got the joke. Another lovely day in Sydney.</p>
 
-                  
-                </div>
-            </div>
-          </label>
-          <label class="Slide" for="Slide5" id="Slide5">
-            <div class="content">
-                <h1>Friday the 13h</h1>
-                <h3>Sept 13th 2019</h3>
-                <div class="block">
-                    <p>It's friday the 13th. Super Spooky Yalls. The spookiest occassionally occuring day of the year.</p>
-                    <p> I didn't see a black cat, but I did see a cat</p>
-                    <p>Aaaanyways.</p>
-                    <p>Things are going well at coderacademy. It's been fun to go there and learn everyday. Everyone is awesome.</p>
 
-                </div>
-            </div>
-          </label>
-          <label for="Slide6" id="Slide6">
-            <div class="content">
-                <h1>Inside on a Rainy day</h1>
-                <h3>Sept 18th 2019</h3>
-                <div class="block">
-                  <p>Another long day down at the code mine. Spent all day slaving over a hot tea, sitting in a beanbag 
-                    chair. Thought we lost Angel. Turns out he was only napping.</p>
-                  
-                  <p>&lt;Code&gt; &lt;Code&gt; &lt;Code&gt;</p>
-                  <p>It's wet outside. On the train, it was wet inside. In the code mines the humidity is juuuust right.
-                     Our computer overlords demand a dry environment... and we must comply.</p>
-                  
-                </div>
-            </div>
-          </label>
-          <label for="Slide7" id="Slide7">
-            <div class="content">
-              <h1>Fair Go</h1>
-              <h3>Sept 19th 2019</h3>
-              <div class="block">
-                Today is exactly 1 month since I started at Coderacademy. It's been such a ride so far. We've covered so much already. Learning something new everyday has been
-                awesome, and is something I look forward to continuing. 
-              </div>
-            </div>
-          </label>
+
         </div>
-      </form>
+        <div class="swiper-slide">
+
+                <div class="content">
+                        <h1>Sydney Trains</h1>
+                        <h3>Aug 23rd 2019</h3>
+                        <div class="block">
+                            <div class="block">
+                              <span>
+                                <p>My backpack weighs about 25 pounds</p>
+                                <p>I spent an hour and 40 minutes getting to North Sydney today. </p>
+                                <p>This provided me a perfect opportunuty to get that sore back I've been craving</p>
+                                <p>Thanks Sydney Transport!</p>
+                            </div>
+                        </div>
+                      </div>
+
+        </div>
+        <div class="swiper-slide">
+
+                <div class="content">
+                        <h1>One Bitcoin</h1>
+                        <h3>Sept 5th 2019</h3>
+                        <div class="block">
+                            <p>My first project for CA is done!
+                            What greater good does it serve? what world issue does it solve?</p>
+                            <p>...</p>
+                            <p>...</p>
+                            <p>well... it's a game specifically designed to be annoying. Which i think it accomplishes quite well
+                            Oh. And it has 8 bit graphics. So that's cool</p>
+                        </div>
+                      </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>BARANGAROO</h1>
+                        <h3>Sept 6th 2019</h3>
+                        <div class="block">
+                          We presented at ACS in Barangaroo. Such an awesome space with such an incredible view. It was a lot of fun seeing everyones projects.
+                          <p>I think my project went over pretty well. I think people got the joke. Another lovely day in Sydney.</p>
+        
+                          
+                        </div>
+                    </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>Friday the 13h</h1>
+                        <h3>Sept 13th 2019</h3>
+                        <div class="block">
+                            <p>It's friday the 13th. Super Spooky Yalls. The spookiest occassionally occuring day of the year.</p>
+                            <p> I didn't see a black cat, but I did see a cat</p>
+                            <p>Aaaanyways.</p>
+                            <p>Things are going well at coderacademy. It's been fun to go there and learn everyday. Everyone is awesome.</p>
+        
+                        </div>
+                    </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>Inside on a Rainy day</h1>
+                        <h3>Sept 18th 2019</h3>
+                        <div class="block">
+                          <p>Another long day down at the code mine. Spent all day slaving over a hot tea, sitting in a beanbag 
+                            chair. Thought we lost Angel. Turns out he was only napping.</p>
+                          
+                          <p>&lt;Code&gt; &lt;Code&gt; &lt;Code&gt;</p>
+                          <p>It's wet outside. On the train, it was wet inside. In the code mines the humidity is juuuust right.
+                             Our computer overlords demand a dry environment... and we must comply.</p>
+                          
+                        </div>
+                    </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>Fair Go</h1>
+                        <h3>Sept 19th 2019</h3>
+                        <div class="block">
+                          <p>Today is exactly 1 month since I started at Coderacademy. It's been such a ride so far. We've covered so much already. Learning something new everyday has been
+                          awesome, and is something I look forward to continuing. </p>
+                        </div>
+                      </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>8 years</h1>
+                        <h3>Sept 21st 2019</h3>
+                        <div class="block">
+                          <p>It's been 8 years as of today since Cheyanne and I started dating. We are celebrating this momentous occassion by working on our respective homework and napping.</p>
+                          <p>We had a laugh about how this date no longer REALLY matters as it's almost like we put in 7 years of normal mode gameplay, marriage is more like playing the game in hard mode</p>
+                          
+                         
+
+                        </div>
+                      </div>
+        </div>
+        <div class="swiper-slide">
+                <div class="content">
+                        <h1>Everything broke</h1>
+                        <h3>Sept 22st 2019</h3>
+                        <div class="block">
+                          <p>Woke up and jumped into finish up up site only to find out that I some how complete broke the site mechanics. My heart dropped.<p>
+                              <p> After a rollback the site is working again, but much of the responsive design work I did yesterday seems lost.</p>
+                              <p>
+
+                        </div>
+                      </div>
+        </div>
+        
+      </div>
+      <!-- PAGINATION -->
+      <div class="swiper-pagination"></div>
     </div>
+
+    <
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="./scripts/swipe.js"></script>
   </body>
 </html>
