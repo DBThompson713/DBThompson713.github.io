@@ -46,7 +46,7 @@ $(() => {
     if (target !== currentIndex) {
       window.clearInterval(interval);
       cycle(target);
-      interval = window.setInterval(cycle, 6000);
+      interval = window.setInterval(cycle, 5000);
     }
   });
 

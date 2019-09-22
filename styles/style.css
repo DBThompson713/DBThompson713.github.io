@@ -74,6 +74,8 @@ body {
   width: 180px;
 }
 
+/* SHADER */
+
 .shader {
   background-color: rgba(0, 0, 0, 0.05);
   transition: background-color 1.25s linear;
@@ -123,25 +125,17 @@ a {
 }
 
 .side-links ul li:nth-of-type(1) {
-  top: 10%;
+  top: 9%;
 }
 .side-links ul li:nth-of-type(2) {
-  top: 34%;
+  top: 32%;
 }
 .side-links ul li:nth-of-type(3) {
-  top: 61%;
-}
-
-.side-links ul li ol {
-  list-style: none;
-  font-size: 1.25rem;
-  margin-top: 0.2rem;
-  /* margin-left: -10px; */
+  top: 58%;
 }
 
 .swinger {
   font-size: 1.7rem;
-  margin-top: 15px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   color: #fff;
@@ -165,6 +159,13 @@ li .swingout {
 
 /* LINK FADE STYLES */
 
+.side-links ul li ol {
+  list-style: none;
+  font-size: 1.25rem;
+  margin-top: 0.2rem;
+  /* margin-left: -10px; */
+}
+
 ol li {
   visibility: hidden;
   opacity: 0;
@@ -173,7 +174,7 @@ ol li {
 
 a:nth-of-type(3):active {
   font-size: 1.5rem;
-  margin-top: 50px;
+  /* margin-top: 250px; */
   color: inherit;
   transform: rotate(270deg);
   text-decoration: none;
@@ -183,7 +184,7 @@ a:nth-of-type(3):active {
 }
 
 li .main-link-fade {
-  margin-top: 80px;
+  /* margin-top: 250px; */
   font-size: 1.75rem;
   margin-bottom: 1rem;
   visibility: visible;
@@ -194,7 +195,7 @@ li .main-link-fade {
 }
 
 li .first-fade {
-  margin-top: 70px;
+  margin-top: 65px;
   visibility: visible;
   opacity: 1;
   transition: opacity 0.5s linear;
@@ -203,7 +204,7 @@ li .first-fade {
 }
 
 li .second-fade {
-  margin-top: 90px;
+  margin-top: 82px;
   visibility: visible;
   opacity: 1;
   transition: opacity 0.8s linear;
@@ -216,12 +217,12 @@ li .second-fix {
 }
 
 #syd-fix {
-  margin-top: 90px;
-  font-size: 1.5rem;
+  margin-top: 82px;
+  font-size: 1.65rem;
 }
 
 li .third-fade {
-  margin-top: 105px;
+  margin-top: 95px;
 }
 
 h2:first-of-type {
@@ -461,7 +462,7 @@ textarea:focus {
 
 /* RESPONSIVE STYLINGS */
 
-@media only screen and (max-width: 580px) {
+@media all and (max-width: 580px) {
   #form-div {
     left: 3%;
     margin-right: 3%;
@@ -472,8 +473,298 @@ textarea:focus {
   }
 }
 
-@media screen and (min-width: 750px) {
-  .swiper-container-vertical > .swiper-pagination-bullets {
+@media all and (min-width: 320px) and (orientation: landscape) {
+  .swinger {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #fff;
+    text-decoration: none;
+    margin-left: -35px;
+    margin-bottom: 10px;
+    transition-duration: 0.1s;
+  }
+
+  li .main-link-fade {
+    font-size: 1.4rem;
+  }
+
+  li .first-fade {
+    margin-top: 65px;
     visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    padding: 10px 0;
+    z-index: 5;
+  }
+
+  li .second-fade {
+    margin-top: 81px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s linear;
+    padding: 10px 0;
+    z-index: 5;
+  }
+  li .third-fade {
+    margin-top: 90px;
+  }
+  #syd-fix {
+    margin-top: 80px;
+    font-size: 1.65rem;
+  }
+}
+@media (min-width: 420px) and (orientation: landscape) {
+  .swinger {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #fff;
+    text-decoration: none;
+    margin-left: -35px;
+    margin-bottom: 10px;
+    transition-duration: 0.1s;
+  }
+
+  li .main-link-fade {
+    font-size: 1.4rem;
+  }
+
+  /* MAIN PAGE BIO */
+
+  .main-photo {
+    width: 30%;
+    border-radius: 35%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
+  }
+
+  #main-page-bio h1 {
+    position: absolute;
+    font-weight: 100;
+    font-size: 2rem;
+    top: 40%;
+    left: 40%;
+  }
+
+  #bio-tag {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    font-weight: 100;
+  }
+
+  .main-info {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 22%;
+    right: 7%;
+  }
+
+  .info {
+    height: 55px;
+    width: 55px;
+  }
+
+  .info:nth-of-type(2) {
+    width: 180px;
+  }
+  .name-fly {
+    /* -moz-transform: scale(1.4) translate(-50px, -50px);
+    -webkit-transform: scale(0.4) translate(-50px, -50px);
+    -o-transform: scale(2) translate(-50px, -50px);
+    -ms-transform: scale(2) translate(-50px, -50px); */
+    transform: scale(1.4) translate(-12%, -150%);
+    transition-duration: 0.25s;
+  }
+  .tag-fly {
+    /* -moz-transform: scale(1.4) translate(-50px, -50px);
+    -webkit-transform: scale(0.4) translate(-50px, -50px);
+    -o-transform: scale(2) translate(-50px, -50px);
+    -ms-transform: scale(2) translate(-50px, -50px); */
+    transform: scale(1.4) translate(-12%, -100%);
+    transition-duration: 0.25s;
+  }
+}
+
+@media (min-width: 720px) and (orientation: landscape) {
+  .swinger {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #fff;
+    text-decoration: none;
+    margin-left: -35px;
+    margin-bottom: 10px;
+    transition-duration: 0.1s;
+  }
+
+  li .main-link-fade {
+    font-size: 1.4rem;
+  }
+  .info {
+    height: 95px;
+    width: 95px;
+  }
+  #bio-tag {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    font-weight: 100;
+    font-size: 1.75rem;
+  }
+  .name-fly {
+    /* -moz-transform: scale(1.4) translate(-50px, -50px);
+    -webkit-transform: scale(0.4) translate(-50px, -50px);
+    -o-transform: scale(2) translate(-50px, -50px);
+    -ms-transform: scale(2) translate(-50px, -50px); */
+    transform: scale(1.7) translate(-25%, -170%);
+    transition-duration: 0.25s;
+  }
+  .tag-fly {
+    /* -moz-transform: scale(1.4) translate(-50px, -50px);
+    -webkit-transform: scale(0.4) translate(-50px, -50px);
+    -o-transform: scale(2) translate(-50px, -50px);
+    -ms-transform: scale(2) translate(-50px, -50px); */
+    transform: scale(1.9) translate(-12%, -100%);
+    transition-duration: 0.25s;
+  }
+  .techs {
+    width: 100%;
+    position: absolute;
+    bottom: 75%;
+    right: 16%;
+    display: flex;
+    justify-content: space-around;
+
+    transition: opacity 0.25s linear;
+  }
+}
+
+@media (min-width: 1020px) and (orientation: landscape) {
+  .swinger {
+    font-size: 2.2rem;
+    margin-top: 15px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-left: -35px;
+    margin-bottom: 10px;
+  }
+
+  li .main-link-fade {
+    font-size: 1.4rem;
+  }
+
+  li .swingout {
+    font-size: 2.5rem;
+    transform: rotate(270deg);
+    text-decoration: none;
+    transform-origin: 100% 0%;
+    transition-duration: 0.25s;
+    margin-bottom: -100px;
+  }
+  .info {
+    height: 220px;
+    width: 220px;
+  }
+  #bio-tag {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    font-weight: 100;
+    font-size: 2.75rem;
+  }
+  .name-fly {
+    /* -moz-transform: scale(1.4) translate(-50px, -50px);
+    -webkit-transform: scale(0.4) translate(-50px, -50px);
+    -o-transform: scale(2) translate(-50px, -50px);
+    -ms-transform: scale(2) translate(-50px, -50px); */
+    transform: scale(2.4) translate(-25%, -170%);
+    transition-duration: 0.25s;
+  }
+  .tag-fly {
+    /* -moz-transform: scale(1.4) translate(-50px, -50px);
+    -webkit-transform: scale(0.4) translate(-50px, -50px);
+    -o-transform: scale(2) translate(-50px, -50px);
+    -ms-transform: scale(2) translate(-50px, -50px); */
+    transform: scale(2.4) translate(-12%, -100%);
+    transition-duration: 0.25s;
+  }
+  a:nth-of-type(3):active {
+    font-size: 4.5rem;
+    /* margin-top: 250px; */
+    color: inherit;
+    transform: rotate(270deg);
+    text-decoration: none;
+    transform-origin: 100% 0%;
+    transition-duration: 0.25s;
+    margin-bottom: -80px;
+  }
+
+  li .main-link-fade {
+    /* margin-top: 250px; */
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s linear;
+    padding: 10px 0;
+    z-index: 5;
+  }
+
+  li .first-fade {
+    margin-top: 65px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+    padding: 10px 0;
+    z-index: 5;
+  }
+
+  li .second-fade {
+    margin-top: 82px;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s linear;
+    padding: 10px 0;
+    z-index: 5;
+  }
+
+  li .second-fix {
+    padding: 20px 0;
+  }
+
+  #syd-fix {
+    margin-top: 82px;
+    font-size: 1.65rem;
+  }
+
+  li .third-fade {
+    margin-top: 95px;
+  }
+
+  h2:first-of-type {
+    font-weight: 200;
+  }
+
+  .second-link {
+    margin-top: 40px;
+  }
+
+  /* INDEX ICON STYLE */
+  .index {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    position: fixed;
+    top: 7%;
+    right: 7%;
+    z-index: 99;
   }
 }
