@@ -103,6 +103,7 @@ $(document).ready(function() {
     $("#three").removeClass("swingout");
     $(".first-link-three").removeClass("main-link-fade");
     $(".first-link-three").removeClass("first-fade");
+    $(".second-link-three").removeClass("second-fade");
   });
 });
 
