@@ -96,7 +96,7 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 750px) {
   .swiper-pagination-bullet {
     visibility: hidden;
   }

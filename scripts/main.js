@@ -19,8 +19,11 @@ $(document).ready(function() {
     $("#three").removeClass("swingout");
     $(".first-link-three").removeClass("main-link-fade");
     $(".first-link-three").removeClass("first-fade");
+    $(".second-link-three").removeClass("second-fade");
   });
 });
+
+// TWO
 
 $(document).ready(function() {
   $("#two").click(function() {
@@ -42,8 +45,11 @@ $(document).ready(function() {
     $("#three").removeClass("swingout");
     $(".first-link-three").removeClass("main-link-fade");
     $(".first-link-three").removeClass("first-fade");
+    $(".second-link-three").removeClass("second-fade");
   });
 });
+
+// THREE
 
 $(document).ready(function() {
   $("#three").click(function() {
@@ -54,6 +60,7 @@ $(document).ready(function() {
     $(this).toggleClass("swingout");
     $(".first-link-three").toggleClass("main-link-fade");
     $(".first-link-three").toggleClass("first-fade");
+    $(".second-link-three").toggleClass("second-fade");
     // ONE
     $("#one").removeClass("swingout");
     $(".link-fade").removeClass("main-link-fade");
@@ -81,7 +88,6 @@ $(document).ready(function() {
     $(".main-page-bio").toggleClass("main-page-bio-fadein");
     $(".swinger").toggleClass("dissapear");
     $(".techs").toggleClass("techs-fadein");
-    // $(".first-link-three").toggleClass("first-fade");
     // ONE
     $("#one").removeClass("swingout");
     $(".link-fade").removeClass("main-link-fade");
