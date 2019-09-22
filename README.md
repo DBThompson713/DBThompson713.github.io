@@ -90,8 +90,8 @@
 
 <h2>Main Page</h2>
 
-![main desktop](./docs/readme_files/screenshots/sc-main-1.jpg)
-![main mobile](./docs/readme_files/screenshots/scm-main-1.jpg)
+![main desktop](./docs/readme_files/screenshots/main.jpg)
+![main desktop 2](./docs/readme_files/screenshots/scm-main-1.jpg)
 
 <h2>Menu folded out</h2>
 
@@ -120,16 +120,7 @@
 
 </div>
 <br />
-<div>
 
-<h2>Workflow - Trello Board</h2>
-<br />
-<a href="https://trello.com/b/O9kLyot3/bitcoin-to">Trello Board: https://trello.com/b/O9kLyot3/bitcoin-to</a>
-
-![trello board](./images/trello.jpg)
-
-</div>
-<br />
 <div>
 <h2>Site Map</h2>
 
@@ -137,4 +128,36 @@
 <br />
 
 </div>
+
+<div>
+
+<h2>Wireframes</h2>
+<br />
+
+<h1>Initial designs</h1>
+<h2>Main Page</h2>
+
+![main desktop](./docs/readme_files/wireframes/original/main.jpg)
+![main mobile](./docs/readme_files/wireframes/original/main_screen2.jpg)
+![main mobile](./docs/readme_files/wireframes/original/main_mobile.jpg)
+
+<h1>Updated design</h1>
+
+![menu out](./docs/readme_files/wireframes/updated_style/main_mobile.jpg)
+![menu out](./docs/readme_files/wireframes/updated_style/main.jpg)
+![menu out](./docs/readme_files/wireframes/updated_style/main.jpg)
+
+<h2>Bio gallery and blog</h2>
+
+![menu out](./docs/readme_files/wireframes/updated_style/bio_gallery_blog.jpg)
+![menu out](./docs/readme_files/wireframes/updated_style/bio.jpg)
+![menu out](./docs/readme_files/wireframes/updated_style/gallery.jpg)
+![menu out](./docs/readme_files/wireframes/updated_style/blogs.jpg)
+
+<h2>Projects Sydney feature contact pafge</h2>
+
+![menu out](./docs/readme_files/wireframes/updated_style/projects_sydney_contact_mobile.jpg)
+
+</div>
+<br />
 <p>Dale Thompson - September 2019 - Coderacademy Sydney
