@@ -20,6 +20,10 @@ body {
   overflow: hidden;
 }
 
+.turnDeviceNotification {
+  display: none;
+}
+
 .main-page-bio {
   visibility: hidden;
   opacity: 0;
@@ -146,7 +150,7 @@ a {
 }
 
 li .swingout {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-top: 50px;
   color: inherit;
   transform: rotate(270deg);
@@ -463,7 +467,7 @@ textarea:focus {
 
 /* RESPONSIVE STYLINGS */
 
-@media all and (max-width: 580px) {
+@media all and (max-width: 500px) {
   #form-div {
     left: 3%;
     margin-right: 3%;
@@ -473,6 +477,15 @@ textarea:focus {
     padding-right: 3%;
   }
 }
+
+/* @media all  {
+  .swinger {
+    font-size: 0.5rem;
+    margin-top: 7px;
+    margin-left: -35px;
+    margin-bottom: 10px;
+  }
+} */
 
 @media all and (min-width: 320px) and (orientation: landscape) {
   .swinger {
@@ -503,7 +516,8 @@ textarea:focus {
     font-size: 1.2rem;
   }
 }
-@media (min-width: 420px) and (orientation: landscape) {
+
+@media (min-width: 420px) and (orientation: landscape) and (max-height: 550px) {
   .swinger {
     font-size: 1rem;
     margin-left: -35px;
@@ -574,7 +588,17 @@ textarea:focus {
   }
 }
 
-@media (min-width: 750px) and (orientation: landscape) {
+/* STUPID LANDSCAPE MODE FOR SMART PHONES FOR PEOPLE WHO ARE JUST LIKE THAT */
+/* @media (orientation: landscape) and (max-height: 400px) {
+  .swinger {
+    font-size: 0.8rem;
+  }
+  li .main-link-fade {
+    font-size: 1.2rem;
+  }
+} */
+
+@media all and (min-width: 700px) and (orientation: landscape) and (min-height: 500px) {
   .swinger {
     font-size: 1.4rem;
     writing-mode: vertical-rl;
@@ -737,5 +761,17 @@ textarea:focus {
   }
   .techs {
     right: 60%;
+  }
+}
+
+/* LOCK IN PORTRAIT FOR  */
+@media screen and (min-width: 320px) and (max-width: 750px) and (orientation: landscape) {
+  .turnDeviceNotification {
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
   }
 }
