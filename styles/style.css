@@ -21,6 +21,7 @@ body {
 }
 
 .turnDeviceNotification {
+  z-index: -20;
   display: none;
 }
 
@@ -517,7 +518,7 @@ textarea:focus {
   }
 }
 
-@media (min-width: 420px) and (orientation: landscape) and (max-height: 550px) {
+@media (min-width: 420px) and (orientation: landscape) {
   .swinger {
     font-size: 1rem;
     margin-left: -35px;
@@ -614,15 +615,15 @@ textarea:focus {
     font-size: 1.4rem;
   }
   .info {
-    height: 95px;
-    width: 95px;
+    height: 125px;
+    width: 125px;
   }
   #bio-tag {
     position: absolute;
     top: 75%;
     left: 5%;
     font-weight: 100;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
   .name-fly {
     -moz-transform: scale(1.7) translate(-25%, -170%);
@@ -654,14 +655,14 @@ textarea:focus {
 }
 
 @media (min-width: 1020px) and (orientation: landscape) {
-  .footer h2 {
+  /* .footer h2 {
     font-size: 3rem;
   }
 
   .footer h3 {
     font-size: 2.25rem;
     margin-top: 20px;
-  }
+  } */
   .swinger {
     font-size: 2.2rem;
     margin-top: 15px;
@@ -682,19 +683,19 @@ textarea:focus {
     height: 220px;
     width: 220px;
   }
-  #bio-tag {
+  /* #bio-tag {
     position: absolute;
     top: 75%;
     left: 5%;
     font-weight: 100;
     font-size: 2.75rem;
-  }
+  } */
   .name-fly {
-    -moz-transform: scale(2.1) translate(-25%, -170%);
-    -webkit-transform: scale(2.1) translate(-24%, -170%);
-    -o-transform: scale(2.1) translate(-24%, -170%);
-    -ms-transform: scale(2.1) translate(-24%, -170%);
-    transform: scale(2.1) translate(-24%, -170%);
+    -moz-transform: scale(2) translate(-25%, -170%);
+    -webkit-transform: scale(2) translate(-24%, -170%);
+    -o-transform: scale(2) translate(-24%, -170%);
+    -ms-transform: scale(2) translate(-24%, -170%);
+    transform: scale(2) translate(-24%, -170%);
   }
   .tag-fly {
     -moz-transform: scale(1.8) translate(-21%, -100%);
@@ -764,12 +765,14 @@ textarea:focus {
   }
 }
 
-/* LOCK IN PORTRAIT FOR  */
-@media screen and (min-width: 320px) and (max-width: 750px) and (orientation: landscape) {
+/* LOCK IN PORTRAIT FOR SMART PHONE */
+@media screen and (min-width: 320px) and (max-width: 800px) and (orientation: landscape) {
   .turnDeviceNotification {
     display: block;
-    object-fit: cover;
+    /* object-fit: cover; */
     position: absolute;
+    left: 0;
+    top: 0;
     z-index: 100;
     width: 100%;
     height: 100%;
