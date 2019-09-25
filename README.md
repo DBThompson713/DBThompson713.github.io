@@ -65,7 +65,6 @@
    <ul>
    <li>Whenever text is visible on the main screen, a .shaded class is applied to the body covering container "shader</li>
    <li>This is accomplised by having jquery apply the shaded class based on certain criteria.</li>
-   <li>the menu headings are closed by removing the swingout class from the unwanted "swingers"</li>
    </ul>
 
 <strong>Touch control for gallery and project sections</strong>
@@ -74,7 +73,6 @@
    <ul>
    <li>The seperate pages are accessible by swiping down. The page will scroll to exactly the next card</li>
    <li>This is accomplised by making use of the swiper api</li>
-   <li>the menu headings are closed by removing the swingout class from the unwanted "swingers"</li>
    </ul>
 
 <strong>Sydney section parallax and touch controls</strong>
@@ -83,7 +81,6 @@
    <ul>
    <li>Makes use of swiper api</li>
    <li>utilizes the swiper parallax timing effects</li>
-   <li>the menu headings are closed by removing the swingout class from the unwanted "swingers"</li>
    </ul>
 
 <h1>Screenshots</h1>
@@ -154,7 +151,7 @@
 ![menu out](./docs/readme_files/wireframes/updated_style/gallery.jpg)
 ![menu out](./docs/readme_files/wireframes/updated_style/blogs.jpg)
 
-<h2>Projects Sydney feature contact pafge</h2>
+<h2>Projects Sydney feature contact page</h2>
 
 ![menu out](./docs/readme_files/wireframes/updated_style/projects_sydney_contact_mobile.jpg)
 

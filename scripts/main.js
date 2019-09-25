@@ -107,6 +107,8 @@ $(document).ready(function() {
   });
 });
 
+// FADE IN MENUS
+
 $(document).ready(function() {
   $(".info-click").click(function() {
     $("#one").hasClass("swingout")
@@ -118,7 +120,6 @@ $(document).ready(function() {
     $(".main-page-bio").toggleClass("main-page-bio-fadein");
     $(".swinger").toggleClass("dissapear");
     $(".techs").toggleClass("techs-fadein");
-    // $(".first-link-three").toggleClass("first-fade");
     // ONE
     $("#one").removeClass("swingout");
     $(".link-fade").removeClass("main-link-fade");
