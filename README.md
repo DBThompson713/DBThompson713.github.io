@@ -3,7 +3,7 @@
 
 <h2>  <a href = "http://www.sillygoosemobile.com">Visit my portfolio</a></h2>
   <p>or</p>
-<h2>  <a href = "https://github.com/DBThompson713/bitcoin_to">visit on github</a></h2>
+<h2>  <a href = "/DBThompson713.github.io">visit on github</a></h2>
 
 <div>
 
