@@ -320,8 +320,8 @@ h2:first-of-type {
 }
 
 .icon {
-  height: 45px;
-  width: 50px;
+  height: 55px;
+  width: 55px;
 }
 
 /* CONTACT PAGE */
@@ -348,6 +348,7 @@ h2:first-of-type {
   position: absolute;
   margin-top: 30px;
   margin-left: -260px;
+  border-radius: 7px;
   -moz-border-radius: 7px;
   -webkit-border-radius: 7px;
 }
@@ -458,7 +459,6 @@ textarea:focus {
 
 #button-blue:hover {
   background-color: rgba(0, 0, 0, 0);
-  color: ;
   text-shadow: -10px -10px 10px rgba(255, 255, 255, 0.1),
     7px 7px 7px rgba(0, 0, 0, 0.5);
 }
@@ -470,9 +470,23 @@ textarea:focus {
 .down-arrow {
   margin-top: 1rem;
   width: 1.75rem;
+  animation: pulsate 2.5s ease-out;
+  animation-iteration-count: infinite;
   -webkit-animation: pulsate 2.5s ease-out;
   -webkit-animation-iteration-count: infinite;
   opacity: 0.5;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
 
 @-webkit-keyframes pulsate {
