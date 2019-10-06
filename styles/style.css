@@ -514,14 +514,13 @@ textarea:focus {
 .see-the-hat {
   height: 115px;
   width: 120px;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1404931/Untitled30.png")
-    center cover;
+  background: url("../imgs/hat_update.png") center cover;
   visibility: visible;
   display: inline-block;
   position: absolute;
   top: 35%;
   left: -75%;
-  z-index: 99;
+  z-index: 50;
   animation-name: hatroll;
   animation-duration: 2s;
   animation-iteration-count: 1;
@@ -706,43 +705,24 @@ textarea:focus {
 
   @keyframes hatroll {
     0% {
-      left: 112%;
+      left: 110%;
       transform: rotate(90deg);
     }
     25% {
       top: 65%;
-      /* transform: rotate(0deg); */
     }
     50% {
       top: 25%;
     }
-
-    100% {
-      left: -112%;
+    75% {
       top: 65%;
+    }
+    100% {
+      left: -110%;
+      top: 25%;
       transform: rotate(-540deg);
     }
   }
-
-  /* @keyframes hatroll {
-    0% {
-      left: 112%;
-      transform: rotate(90deg);
-    }
-    25% {
-      top: 65%;
-      transform: rotate(0deg);
-    }
-    50% {
-      top: 25%;
-    }
-
-    100% {
-      left: -112%;
-      top: 65%;
-      transform: rotate(-270deg);
-    }
-  } */
 
   li .main-link-fade {
     font-size: 1.4rem;
