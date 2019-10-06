@@ -6,12 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>.contact</title>
     <link rel="stylesheet" href="./styles/style.css" integrity="2vz+u4/Yu9Lm0SR92N+/HzpctOumdGNyaaFdpyiAxTkcH4EfVm7aHKzpZwB3mi0w">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/serializeObject.js"></script>
+    <script src="scripts/formHandle.js"></script>
+    
   </head>
   <body>
       <a href="index.html" class="index"> <span class="angle-bracket"> &lt;</span>X<span class="angle-bracket">&gt; </span> </a>
       <div id="form-main">
           <div id="form-div">
-            <form class="form" id="form1">
+            <form class="form gform" id="form1">
               <p class="name">
                 <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="name" id="name-input" />
               </p>
@@ -22,10 +26,13 @@
                 <textarea name="message" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="How are you going?"></textarea>
               </p>
               <div class="submit">
-                <input type="submit" value="send" id="button-blue"/>
+                <input type="submit" value="send" id="button-blue submit-form"/>
                 <div class="ease"></div>
               </div>
             </form>
           </div>
+          
   </body>
+  
+    
 </html>

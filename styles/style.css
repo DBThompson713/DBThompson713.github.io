@@ -502,6 +502,50 @@ textarea:focus {
   }
 }
 
+/* ROLLING HAT */
+
+.hatroll {
+  width: 100%;
+  visibility: hidden;
+}
+
+.see-the-hat {
+  height: 115px;
+  width: 120px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1404931/Untitled30.png");
+  visibility: visible;
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: -75%;
+  z-index: 10000;
+  animation-name: hatroll;
+  animation-duration: 1.75s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  overflow: hidden;
+}
+
+.hat {
+}
+
+@keyframes hatroll {
+  0% {
+    left: 112%;
+  }
+  25% {
+    top: 65%;
+  }
+  50% {
+    top: 25%;
+  }
+  100% {
+    left: -35%;
+    top: 65%;
+    transform: rotate(-720deg);
+  }
+}
+
 /* RESPONSIVE STYLINGS */
 
 @media all and (max-width: 500px) {
@@ -645,6 +689,10 @@ textarea:focus {
     margin-left: -35px;
     margin-bottom: 10px;
     transition-duration: 0.1s;
+  }
+
+  .see-the-hat {
+    animation-duration: 2.75s;
   }
 
   li .main-link-fade {

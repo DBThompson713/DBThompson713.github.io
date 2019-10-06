@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>.contact</title>
+    <link
+      rel="stylesheet"
+      href="./styles/style.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/serializeObject.js"></script>
+    <script src="scripts/formHandle.js"></script>
+  </head>
+
+  <body>
+
+    <a href="index.html" class="index"> <span class="angle-bracket"> &lt;</span>X<span class="angle-bracket">&gt; </span> </a>
+
+      <div id="form-main">
+          <div id="form-div">
+            <form
+            target="_self"
+            onsubmit="return postToGoogle();"
+            action=""
+            autocomplete="off"
+            class="form gform" 
+            id="form form1">
+              <p class="name">
+
+                <input 
+                name="name" 
+                id=" name-input nameField"
+                name="entry.1878757415"
+                placeholder="Enter your name"
+                type="text"
+                requiredtype="text" 
+                class="feedback-input" 
+                placeholder="name"
+                />
+              </p>
+              <p class="email">
+
+                <input 
+                id=" email emailField"
+                name="entry.242676801"
+                placeholder="Enter your email"
+                type="email"
+                requiredname="email" 
+                type="text" 
+                class="feedback-input" 
+                placeholder="email" 
+                />
+              </p>
+              <p class="text">
+
+                <textarea 
+                id="howField comment"
+                name="entry.148064616"
+                placeholder="how are you going?"
+                requiredname="message" 
+                class="feedback-input"
+                placeholder="How are you going?">
+              </textarea>
+              </p>
+              <div class="submit">
+                <button id="send button-blue submit-form" type="submit" class="common_btn">Register Now</button>
+              
+                <div class="ease"></div>
+              </div>
+            </form>
+          </div>
+
+
+    </form>
+
+    <h3
+      id="success-msg"
+      style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"
+    >
+      Your Request has been posted to Google Spreadsheet
+    </h3>
+
+  
+
+    <script>
+      function postToGoogle() {
+        var field1 = $("#nameField").val();
+        var field2 = $("#emailField").val();
+        var field3 = $("#howField").val();
+
+        if (field1 == "") {
+          alert("Please enter Your Name");
+          document.getElementById("nameField").focus();
+          return false;
+        }
+        if (field2 == "") {
+          alert("Please enter Your Email");
+          document.getElementById("emailField").focus();
+          return false;
+        }
+        if (field3 == "") {
+          alert("how can I help?");
+          document.getElementById("howField").focus();
+          return false;
+        }
+
+        $.ajax({
+          url:
+            "https://docs.google.com/forms/d/e/1FAIpQLSfHGMBE9DfesGwFLWoPY8WjnTvdLjqIhM503aJun9hjgrf-lg/formResponse?",
+          data: {
+            "entry.1878757415": field1,
+            "entry.242676801": field2,
+            "entry.148064616": field3
+          },
+          type: "POST",
+          dataType: "xml",
+          success: function(d) {},
+          error: function(x, y, z) {
+            $("#success-msg").show();
+            $("#form").hide();
+          }
+        });
+        return false;
+      }
+    </script>
+  </body>
+</html>

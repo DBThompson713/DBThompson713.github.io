@@ -137,3 +137,12 @@ $(document).ready(function() {
     $(".first-link-three").removeClass("first-fade");
   });
 });
+
+// HAT ROLL
+$(document).ready(function() {
+  $(".hatword").click(function() {
+    $(".hat").hasClass("see-the-hat")
+      ? $(".hat").removeClass("see-the-hat")
+      : $(".hat").addClass("see-the-hat");
+  });
+});
