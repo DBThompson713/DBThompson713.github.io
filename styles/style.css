@@ -279,6 +279,7 @@ h2:first-of-type {
   margin-right: 5%;
   margin-bottom: 0;
   transition-duration: 0.15s;
+  cursor: nwse-resize;
 }
 
 .name-fly {
