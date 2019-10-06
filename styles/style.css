@@ -512,7 +512,8 @@ textarea:focus {
 .see-the-hat {
   height: 115px;
   width: 120px;
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1404931/Untitled30.png");
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1404931/Untitled30.png")
+    center cover;
   visibility: visible;
   display: inline-block;
   position: absolute;
@@ -693,6 +694,8 @@ textarea:focus {
 
   .see-the-hat {
     animation-duration: 2.75s;
+    height: 135px;
+    width: 140px;
   }
 
   li .main-link-fade {
