@@ -18,8 +18,7 @@ $(document).ready(function() {
     $(".third-link-two").removeClass("third-fade");
     // THREE
     $("#three").removeClass("swingout");
-    $(".first-link-three").removeClass("main-link-fade");
-    $(".first-link-three").removeClass("first-fade");
+    $(".first-link-three").removeClass("main-link-fade first-fade");
     $(".second-link-three").removeClass("second-fade");
   });
   // SWINGER 2
@@ -40,8 +39,7 @@ $(document).ready(function() {
     $(".second-link").removeClass("second-fade");
     //THREE
     $("#three").removeClass("swingout");
-    $(".first-link-three").removeClass("main-link-fade");
-    $(".first-link-three").removeClass("first-fade");
+    $(".first-link-three").removeClass("main-link-fade first-fade");
     $(".second-link-three").removeClass("second-fade");
   });
   // SWINGER 3
@@ -51,8 +49,7 @@ $(document).ready(function() {
       : $(".shader").addClass("shaded");
 
     $(this).toggleClass("swingout");
-    $(".first-link-three").toggleClass("main-link-fade");
-    $(".first-link-three").toggleClass("first-fade");
+    $(".first-link-three").toggleClass("main-link-fade first-fade");
     $(".second-link-three").toggleClass("second-fade");
     // ONE
     $("#one").removeClass("swingout");
@@ -90,8 +87,7 @@ $(document).ready(function() {
     $(".third-link-two").removeClass("third-fade");
     // THREE
     $("#three").removeClass("swingout");
-    $(".first-link-three").removeClass("main-link-fade");
-    $(".first-link-three").removeClass("first-fade");
+    $(".first-link-three").removeClass("main-link-fade first-fade");
     $(".second-link-three").removeClass("second-fade");
   });
   // -----------------------------------------------INFO SECTION
@@ -118,8 +114,7 @@ $(document).ready(function() {
     $(".third-link-two").removeClass("third-fade");
     // THREE
     $("#three").removeClass("swingout");
-    $(".first-link-three").removeClass("main-link-fade");
-    $(".first-link-three").removeClass("first-fade");
+    $(".first-link-three").removeClass("main-link-fade first-fade");
   });
   // --------------------------------------------HAT ROLL
   $(".hatword").click(function() {
