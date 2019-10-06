@@ -135,10 +135,10 @@ a {
   top: 9%;
 }
 .side-links ul li:nth-of-type(2) {
-  top: 32%;
+  top: 35%;
 }
 .side-links ul li:nth-of-type(3) {
-  top: 58%;
+  top: 56%;
 }
 
 .swinger {
@@ -211,7 +211,7 @@ li .first-fade {
 }
 
 li .second-fade {
-  margin-top: 82px;
+  margin-top: 90px;
   visibility: visible;
   opacity: 1;
   transition: opacity 0.8s linear;
@@ -220,7 +220,7 @@ li .second-fade {
 }
 
 li .second-fix {
-  padding: 20px 0;
+  padding: 5px 0;
 }
 
 #syd-fix {
@@ -229,7 +229,7 @@ li .second-fix {
 }
 
 li .third-fade {
-  margin-top: 95px;
+  margin-top: 117px;
 }
 
 h2:first-of-type {
@@ -870,12 +870,12 @@ textarea:focus {
   }
 
   li .second-fade {
-    margin-top: 82px;
+    margin-top: 90px;
     padding: 10px 0;
   }
 
   li .second-fix {
-    padding: 20px 0;
+    padding: 0px 0;
   }
 
   #syd-fix {
@@ -885,7 +885,7 @@ textarea:focus {
   }
 
   li .third-fade {
-    margin-top: 95px;
+    margin-top: 115px;
   }
 
   h2:first-of-type {
