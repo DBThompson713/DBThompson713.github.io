@@ -18,6 +18,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   overflow: hidden;
+  height: 100%;
 }
 
 .turnDeviceNotification {
@@ -79,12 +80,10 @@ body {
   width: 180px;
 }
 
-/* SHADER */
+/* ----------------------------------------------------- SHADER */
 
 .shader {
   background-color: rgba(0, 0, 0, 0);
-  /* transition: background-color 0.15s linear; */
-  /* transition-timing-function: step-end; */
   display: flex;
   text-align: center;
 }
@@ -503,7 +502,7 @@ textarea:focus {
   }
 }
 
-/* ROLLING HAT */
+/* --------------------------------------------------- ROLLING HAT */
 
 .hatroll {
   width: 100%;
@@ -585,7 +584,69 @@ textarea:focus {
   }
 }
 
-/* RESPONSIVE STYLINGS */
+/* --------------------------------------------------- SYDNEY SECTION */
+
+body #sydney {
+  font-family: "Gayathri", sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+}
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 220%;
+  height: 100vh;
+  background-image: url("../imgs/gallery/sydney-pana.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: left;
+}
+.swiper-slide .title {
+  font-size: 41px;
+  font-weight: 300;
+}
+.swiper-slide .subtitle {
+  font-size: 21px;
+}
+.swiper-slide .text {
+  font-size: 14px;
+  max-width: 400px;
+  line-height: 1.3;
+}
+
+.swiper-wrapper {
+  height: 100vh;
+}
+
+.sydney-title {
+  font-size: 1.6rem;
+  text-align: left;
+}
+
+.subtitle {
+  text-align: left;
+}
+
+/* ------------------------------------------------- RESPONSIVE STYLINGS */
 
 @media all and (max-width: 500px) {
   #form-div {
@@ -597,15 +658,6 @@ textarea:focus {
     padding-right: 3%;
   }
 }
-
-/* @media all  {
-  .swinger {
-    font-size: 0.5rem;
-    margin-top: 7px;
-    margin-left: -35px;
-    margin-bottom: 10px;
-  }
-} */
 
 @media all and (min-width: 320px) and (orientation: landscape) {
   .swinger {
