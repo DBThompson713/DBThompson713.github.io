@@ -1,5 +1,6 @@
-// SIDE NAV
 $(document).ready(function() {
+  // ---------------------------------------SIDE NAVS
+  // SWINGER 1
   $("#one").click(function() {
     $(this).hasClass("swingout")
       ? $(".shader").removeClass("shaded")
@@ -21,11 +22,7 @@ $(document).ready(function() {
     $(".first-link-three").removeClass("first-fade");
     $(".second-link-three").removeClass("second-fade");
   });
-});
-
-// TWO
-
-$(document).ready(function() {
+  // SWINGER 2
   $("#two").click(function() {
     $(this).hasClass("swingout")
       ? $(".shader").removeClass("shaded")
@@ -47,11 +44,7 @@ $(document).ready(function() {
     $(".first-link-three").removeClass("first-fade");
     $(".second-link-three").removeClass("second-fade");
   });
-});
-
-// THREE
-
-$(document).ready(function() {
+  // SWINGER 3
   $("#three").click(function() {
     $(this).hasClass("swingout")
       ? $(".shader").removeClass("shaded")
@@ -73,11 +66,7 @@ $(document).ready(function() {
     $(".second-link-two").removeClass("second-fade");
     $(".third-link-two").removeClass("third-fade");
   });
-});
-
-// Name click
-
-$(document).ready(function() {
+  // --------------------------------------------- HOME PAGE BIO FLY UP
   $("#name").click(function() {
     $(this).hasClass("name-fly")
       ? $(".shader").removeClass("shaded")
@@ -105,11 +94,7 @@ $(document).ready(function() {
     $(".first-link-three").removeClass("first-fade");
     $(".second-link-three").removeClass("second-fade");
   });
-});
-
-// FADE IN MENUS
-
-$(document).ready(function() {
+  // -----------------------------------------------INFO SECTION
   $(".info-click").click(function() {
     $("#one").hasClass("swingout")
       ? $(".shader").removeClass("shaded")
@@ -136,21 +121,7 @@ $(document).ready(function() {
     $(".first-link-three").removeClass("main-link-fade");
     $(".first-link-three").removeClass("first-fade");
   });
-});
-
-// // HAT ROLL
-// $(document).ready(function() {
-//   $(".hatword").click(function() {
-//     $("#hato").hasClass("see-the-hat")
-//       ? $("#hato")
-//           .removeClass("see-the-hat")
-//           .addClass("see-the-hat")
-//       : $("#hato").addClass("see-the-hat");
-//   });
-// });
-
-// HAT ROLL
-$(document).ready(function() {
+  // --------------------------------------------HAT ROLL
   $(".hatword").click(function() {
     $("#hato").hasClass("see-the-hat")
       ? $("#hato")

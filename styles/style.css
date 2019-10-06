@@ -571,16 +571,13 @@ textarea:focus {
 
 @keyframes hatroll_reverse {
   0% {
-    left: -15%;
-    top: 25%;
+    left: -20%;
+    top: 35%;
     transform: rotate(-180deg);
-  }
-  25% {
   }
   50% {
     top: 65%;
   }
-
   100% {
     left: 112%;
     top: 25%;
@@ -757,11 +754,9 @@ textarea:focus {
       transform: rotate(-270deg);
       top: 5%;
     }
-
     50% {
       top: 45%;
     }
-
     100% {
       left: 105%;
       top: 5%;
