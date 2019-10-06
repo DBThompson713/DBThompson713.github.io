@@ -83,8 +83,8 @@ body {
 
 .shader {
   background-color: rgba(0, 0, 0, 0);
-  transition: background-color 0.25s linear;
-  transition-timing-function: step-end;
+  /* transition: background-color 0.15s linear; */
+  /* transition-timing-function: step-end; */
   display: flex;
   text-align: center;
 }
@@ -508,6 +508,7 @@ textarea:focus {
 .hatroll {
   width: 100%;
   visibility: hidden;
+  background-color: transparent;
 }
 
 .see-the-hat {
@@ -528,7 +529,8 @@ textarea:focus {
   overflow: hidden;
 }
 
-.hat {
+.hatword {
+  cursor: pointer;
 }
 
 @keyframes hatroll {

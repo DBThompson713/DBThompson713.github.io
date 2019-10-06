@@ -97,6 +97,14 @@ body {
   margin: 0 auto;
 }
 
+@media all and (min-width: 700px) and (orientation: landscape) and (min-height: 500px) {
+  .screenshot {
+    max-width: 100%;
+    height: 25vh;
+  }
+}
+/* PROJECTS SECTION */
+
 @media screen and (min-width: 750px) {
   .swiper-container-vertical > .swiper-pagination-bullets {
     visibility: visible;
