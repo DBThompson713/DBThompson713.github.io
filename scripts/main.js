@@ -138,11 +138,26 @@ $(document).ready(function() {
   });
 });
 
+// // HAT ROLL
+// $(document).ready(function() {
+//   $(".hatword").click(function() {
+//     $("#hato").hasClass("see-the-hat")
+//       ? $("#hato")
+//           .removeClass("see-the-hat")
+//           .addClass("see-the-hat")
+//       : $("#hato").addClass("see-the-hat");
+//   });
+// });
+
 // HAT ROLL
 $(document).ready(function() {
   $(".hatword").click(function() {
-    $(".hat").hasClass("see-the-hat")
-      ? $(".hat").removeClass("see-the-hat")
-      : $(".hat").addClass("see-the-hat");
+    $("#hato").hasClass("see-the-hat")
+      ? $("#hato")
+          .removeClass("see-the-hat")
+          .addClass("see-the-hat-reverse")
+      : $("#hato")
+          .removeClass("see-the-hat-reverse")
+          .addClass("see-the-hat");
   });
 });

@@ -528,27 +528,63 @@ textarea:focus {
   overflow: hidden;
 }
 
+.see-the-hat-reverse {
+  height: 145px;
+  width: 150px;
+  background: url("../imgs/hat_update.png") center cover;
+  visibility: visible;
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: -75%;
+  z-index: 50;
+  animation-name: hatroll_reverse;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  overflow: hidden;
+}
+
 .hatword {
   cursor: pointer;
 }
 
 @keyframes hatroll {
   0% {
-    left: 112%;
+    left: 110%;
     transform: rotate(90deg);
   }
   25% {
     top: 65%;
     transform: rotate(0deg);
   }
-  50% {
+  70% {
     top: 25%;
   }
 
   100% {
-    left: -112%;
+    left: -115%;
     top: 65%;
     transform: rotate(-270deg);
+  }
+}
+
+@keyframes hatroll_reverse {
+  0% {
+    left: -15%;
+    top: 25%;
+    transform: rotate(-180deg);
+  }
+  25% {
+  }
+  50% {
+    top: 65%;
+  }
+
+  100% {
+    left: 112%;
+    top: 25%;
+    transform: rotate(90deg);
   }
 }
 
@@ -687,6 +723,11 @@ textarea:focus {
     height: 280px;
     width: 290px;
   }
+  .see-the-hat-reverse {
+    animation-duration: 2.75s;
+    height: 280px;
+    width: 290px;
+  }
 
   @keyframes hatroll {
     0% {
@@ -708,6 +749,27 @@ textarea:focus {
       top: 5%;
       transform: rotate(-540deg);
     }
+  }
+
+  @keyframes hatroll_reverse {
+    0% {
+      left: -20%;
+      transform: rotate(-270deg);
+      top: 5%;
+    }
+
+    50% {
+      top: 45%;
+    }
+
+    100% {
+      left: 105%;
+      top: 5%;
+      transform: rotate(90deg);
+    }
+  }
+  .see-the-hat-reverse {
+    animation-duration: 1.5s;
   }
 
   li .main-link-fade {
@@ -848,6 +910,16 @@ textarea:focus {
   .techs {
     /* right: 60%; */
     align-self: right;
+  }
+  .see-the-hat {
+    animation-duration: 3.5s;
+    height: 310px;
+    width: 320px;
+  }
+  .see-the-hat-reverse {
+    animation-duration: 2s;
+    height: 310px;
+    width: 320px;
   }
 }
 
