@@ -21,9 +21,9 @@
 
 <strong><h2>Purpose</h2></strong>
 
-<p>The purpose of this portfolio is to show some basic information and details about myself as well as display a bit of coding.</p>
+<p>The purpose of this portfolio is to show some basic information and details about myself as well as serve as a bit of a playground.</p>
 
-<p>I wanted to try doing something a little different, even if it meant a bit of extra headaches for myself. I wanted to play with an atypical interface.</p>
+<p>I wanted to try doing something a little different, even if it meant a bit of extra headaches for myself. I wanted to play with an atypical interface. I am aiming for something fun, bright and kinetic. When you tap something it should do something.</p>
 
 <p> I wanted to show case a few projects I had previously completed, as well as show some photos.</p>
 
@@ -43,7 +43,7 @@
 
 <strong>Animated side nav bar</strong>
 
-   <p> The nav bar is located on the right hand side. the text is written bottom to top, left to right. Upon clicking a the side links, they swing out at a 90 degree angle so that the font is the right way.
+   <p> The nav bar is located on the left hand side. the text is written bottom to top, left to right. Upon clicking a the side links, they swing out at a 90 degree angle so that the font is the right way.
    <ul>
    <li>clicking a new side bar heading will cause the intially clicked out to swing back in, so that one one menu is "swung out" at any time.</li>
    <li>This is accomplished by having jquery listen for a click on any of the side links and applying a class which hass a css animation to "swing" the nav heading out</li>
@@ -77,7 +77,7 @@
 
 <strong>Sydney section parallax and touch controls</strong>
 
-<p>The gallery section makes use of a parallax effect for a short story while slideing left and right to display a panaramic shot of sydney harbour
+<p>The gallery section makes use of a parallax effect for a short story while sliding left and right to display a panaramic shot of sydney harbour
    <ul>
    <li>Makes use of swiper api</li>
    <li>utilizes the swiper parallax timing effects</li>
