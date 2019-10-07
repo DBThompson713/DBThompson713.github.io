@@ -72,8 +72,18 @@ body {
 
 .info {
   height: 75px;
-  width: 75px;
+  width: 80px;
   border-radius: 10px;
+}
+
+.insta {
+  border-radius: 20px;
+  height: 75px;
+  width: 80px;
+}
+
+.letter {
+  width: 95px;
 }
 
 .info:nth-of-type(2) {
@@ -603,7 +613,6 @@ body #sydney {
 .swiper-container {
   width: 100%;
   height: 100%;
-  background: #000;
 }
 .swiper-slide {
   font-size: 18px;
@@ -1053,6 +1062,10 @@ textarea:focus {
     width: 110px;
   }
 
+  .insta {
+    border-radius: 32px;
+  }
+
   .info:nth-of-type(2) {
     width: 180px;
   }
@@ -1141,8 +1154,13 @@ textarea:focus {
     font-size: 1.4rem;
   }
   .info {
+    margin-top: 33%;
     height: 125px;
     width: 130px;
+  }
+
+  .letter {
+    width: 150px;
   }
   #bio-tag {
     position: absolute;
@@ -1205,8 +1223,15 @@ textarea:focus {
     margin-bottom: -100px;
   }
   .info {
+    margin-top: 33%;
     height: 220px;
     width: 225px;
+  }
+  .insta {
+    border-radius: 55px;
+  }
+  .letter {
+    width: 255px;
   }
 
   .name-fly {
