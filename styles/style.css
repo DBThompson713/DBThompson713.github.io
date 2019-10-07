@@ -74,6 +74,8 @@ body {
   height: 75px;
   width: 80px;
   border-radius: 10px;
+  box-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .insta {
@@ -187,7 +189,7 @@ ol li {
   transition-duration: 0.1s;
 }
 
-a:nth-of-type(3):active {
+li a:nth-of-type(3):active {
   font-size: 1.5rem;
   color: inherit;
   transform: rotate(270deg);
@@ -1161,6 +1163,7 @@ textarea:focus {
 
   .letter {
     width: 150px;
+    margin-top: 30%;
   }
   #bio-tag {
     position: absolute;
@@ -1225,13 +1228,16 @@ textarea:focus {
   .info {
     margin-top: 33%;
     height: 220px;
-    width: 225px;
+    width: 195px;
   }
   .insta {
+    margin-top: 30%;
     border-radius: 55px;
+    width: 215px;
   }
   .letter {
-    width: 255px;
+    margin-top: 28%;
+    width: 235px;
   }
 
   .name-fly {
