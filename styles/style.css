@@ -57,7 +57,7 @@ body {
 
 #bio-tag {
   position: absolute;
-  top: 49%;
+  top: 53%;
   left: 18%;
   font-weight: 100;
 }
@@ -80,7 +80,7 @@ body {
   width: 180px;
 }
 
-/* ----------------------------------------------------- SHADER */
+/* ----------------------------------------------------------------------- SHADER */
 
 .shader {
   background-color: rgba(0, 0, 0, 0);
@@ -116,7 +116,7 @@ a {
 
 /* End of common styling */
 
-/* START OF SIDE NAVBAR STYLING */
+/* -----------------------------------------------------START OF SIDE NAVBAR STYLING */
 
 .side-links {
   display: inline;
@@ -131,10 +131,10 @@ a {
 }
 
 .side-links ul li:nth-of-type(1) {
-  top: 9%;
+  top: 13%;
 }
 .side-links ul li:nth-of-type(2) {
-  top: 35%;
+  top: 36%;
 }
 .side-links ul li:nth-of-type(3) {
   top: 56%;
@@ -163,13 +163,12 @@ li .swingout {
   z-index: 5;
 }
 
-/* LINK FADE STYLES */
+/* -----------------------------------------------------------------LINK FADE STYLES */
 
 .side-links ul li ol {
   list-style: none;
   font-size: 1.25rem;
   margin-top: 0.2rem;
-  /* margin-left: -10px; */
 }
 
 ol li {
@@ -180,7 +179,6 @@ ol li {
 
 a:nth-of-type(3):active {
   font-size: 1.5rem;
-  /* margin-top: 250px; */
   color: inherit;
   transform: rotate(270deg);
   text-decoration: none;
@@ -190,7 +188,6 @@ a:nth-of-type(3):active {
 }
 
 li .main-link-fade {
-  /* margin-top: 250px; */
   font-size: 1.75rem;
   margin-bottom: 1rem;
   visibility: visible;
@@ -239,7 +236,7 @@ h2:first-of-type {
   margin-top: 40px;
 }
 
-/* INDEX ICON STYLE */
+/* --------------------------------------------------------- INDEX ICON STYLE */
 .index {
   font-size: 1.5rem;
   color: #fff;
@@ -251,7 +248,7 @@ h2:first-of-type {
   font-weight: 300;
 }
 
-/* NAME AND TAG BADGE STYLE */
+/* ------------------------------------------------------ NAME AND TAG BADGE STYLE */
 
 .footer {
   position: fixed;
@@ -300,7 +297,7 @@ h2:first-of-type {
   transition-duration: 0.25s;
 }
 
-/* TECHS ON MAIN PAGE INFO */
+/* ----------------------------------------------------- TECHS ON MAIN PAGE INFO */
 
 .techs {
   width: 100%;
@@ -325,7 +322,7 @@ h2:first-of-type {
   width: 55px;
 }
 
-/* CONTACT PAGE */
+/* ------------------------------------------------------  CONTACT PAGE */
 
 #feedback-page {
   text-align: center;
@@ -386,7 +383,7 @@ h2:first-of-type {
   border: #30aed6 solid 3px;
 }
 
-/* Icons ---------------------------------- */
+/* ------------------------------------------------------------Icons*/
 #name-input {
   background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
   background-size: 30px 30px;
@@ -502,7 +499,7 @@ textarea:focus {
   }
 }
 
-/* --------------------------------------------------- ROLLING HAT */
+/* ------------------------------------------------------------ ROLLING HAT */
 
 .hatroll {
   width: 100%;
@@ -536,7 +533,7 @@ textarea:focus {
   position: absolute;
   top: 35%;
   left: -75%;
-  z-index: 50;
+  z-index: -2;
   animation-name: hatroll_reverse;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
@@ -572,15 +569,21 @@ textarea:focus {
   0% {
     left: -20%;
     top: 35%;
-    transform: rotate(-180deg);
+    transform: rotate(-90deg);
+    opacity: 0.85;
+  }
+  10% {
+    opacity: 1%;
   }
   50% {
     top: 65%;
+    left: 20%;
+    transform: rotate(-40deg);
   }
   100% {
     left: 112%;
     top: 25%;
-    transform: rotate(90deg);
+    transform: rotate(260deg);
   }
 }
 
@@ -644,6 +647,152 @@ body #sydney {
 
 .subtitle {
   text-align: left;
+}
+
+/* -------------------------------------------------- GALLERY STYLINGS */
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+#slides {
+  position: relative;
+  margin-top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#slides .slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#slides .slide .title {
+  position: absolute;
+  top: 61%;
+  left: 18%;
+  z-index: 2;
+  padding-top: 5px;
+  font-family: "Gayathri", sans-serif;
+  font-size: 4em;
+  color: white;
+  text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.1),
+    1px 1px 1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+#slides .slide .title .title-text {
+  display: block;
+  -webkit-transform: translateY(1.2em);
+  transform: translateY(1.2em);
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+#slides .slide .slide-partial {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+#slides .slide .slide-partial img {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+#slides .slide .slide-left {
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+#slides .slide .slide-left img {
+  top: 0;
+  right: 0;
+  -o-object-position: 100% 50%;
+  object-position: 100% 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+#slides .slide .slide-right {
+  top: 0;
+  right: 0;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  transition-delay: 0.2s;
+}
+#slides .slide .slide-right img {
+  top: 0;
+  left: 0;
+  -o-object-position: 0% 50%;
+  object-position: 0% 50%;
+  transition-delay: 0.2s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+#slides .slide.active .title .title-text {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+  transition-delay: 0.3s;
+}
+#slides .slide.active .slide-partial,
+#slides .slide.active .slide-partial img {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+#slide-select {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Gayathri", sans-serif;
+  font-size: 1.5em;
+  font-weight: lighter;
+  color: white;
+}
+#slide-select li {
+  position: relative;
+  cursor: pointer;
+  margin: 0 5px;
+  list-style: none;
+}
+
+#slide-select li.prev:hover {
+  -webkit-transform: translateX(-2px);
+  transform: translateX(-2px);
+}
+#slide-select li.next:hover {
+  -webkit-transform: translateX(2px);
+  transform: translateX(2px);
+}
+#slide-select .selector {
+  height: 32px;
+  width: 32px;
+  border-radius: 11px;
+  border: 2px solid white;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+}
+#slide-select .selector.current {
+  background-color: white;
 }
 
 /* ------------------------------------------------- RESPONSIVE STYLINGS */
@@ -760,6 +909,8 @@ body #sydney {
   }
 }
 
+/* -------------------------------------------------------------- TABLET LANDSCAPE */
+
 @media all and (min-width: 700px) and (orientation: landscape) and (min-height: 500px) {
   .swinger {
     font-size: 1.4rem;
@@ -803,16 +954,18 @@ body #sydney {
   @keyframes hatroll_reverse {
     0% {
       left: -20%;
-      transform: rotate(-270deg);
+      transform: rotate(-110deg);
       top: 5%;
     }
     50% {
       top: 45%;
+      left: 30%;
+      transform: rotate(-50deg);
     }
     100% {
       left: 105%;
       top: 5%;
-      transform: rotate(90deg);
+      transform: rotate(290deg);
     }
   }
   .see-the-hat-reverse {
@@ -860,8 +1013,15 @@ body #sydney {
     top: 7%;
     right: 7%;
   }
-}
 
+  #slides .slide .title {
+    position: absolute;
+    top: 51%;
+  }
+}
+/*  */
+/* ----------------------------------------------------DESKTOP SIZE */
+/*  */
 @media (min-width: 1020px) and (orientation: landscape) {
   .swinger {
     font-size: 2.2rem;
@@ -970,7 +1130,10 @@ body #sydney {
   }
 }
 
-/* LOCK IN PORTRAIT FOR SMART PHONE */
+/* ---------------------------------------------LOCK IN PORTRAIT FOR SMART PHONE */
+/* 
+
+*/
 @media screen and (min-width: 320px) and (max-height: 400px) and (orientation: landscape) {
   .turnDeviceNotification {
     display: block;
