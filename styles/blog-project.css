@@ -36,11 +36,11 @@ body {
   align-items: center;
 }
 
-.swiper-slide:nth-of-type(odd) {
+/* .swiper-slide:nth-of-type(odd) {
   background: url("imgs/blog_bg1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 .swiper-container-vertical > .swiper-pagination-bullets {
   right: 1%;

@@ -1,36 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>.contact</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body class="contact_page shader shaded">
-      <a href="index.html" class="index"> <span class="angle-bracket"> &lt;</span>X<span class="angle-bracket">&gt; </span> </a>
-      <div id="form-main">
-          <div id="form-div">
-            <form class="form gform" id="form1">
-              <p class="name">
-                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="name" id="name-input" />
-              </p>
-              <p class="email">
-                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="email" />
-              </p>
-              <p class="text">
-                <textarea name="message" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="How are you going?"></textarea>
-              </p>
-              <div class="submit">
-                <input type="submit" value="send" id="button-blue "/>
-                <div class="ease"></div>
-              </div>
-            </form>
-          </div>
-          
+  <body class="contact_page">
+    <a href="index.html" class="index">
+      <span class="angle-bracket"> &lt;</span>X<span class="angle-bracket"
+        >&gt;
+      </span>
+    </a>
+    <div id="form-main">
+      <div id="form-div">
+        <h2>Send me a message!</h2>
+        <form
+          class="gform form"
+          id="form"
+          target="_self"
+          onsubmit="return postToGoogle();"
+          action=""
+          autocomplete="off"
+        >
+          <p class="name">
+            <input
+              class="validate[required,custom[onlyLetter],length[0,100]] feedback-input name-input"
+              id="nameField"
+              name="entry.909700114"
+              placeholder="name"
+              type="text"
+              required
+            />
+          </p>
+          <p class="email">
+            <input
+              class="validate[required,custom[email]] feedback-input email"
+              id="emailField"
+              name="entry.1765100811"
+              placeholder="email"
+              type="email"
+              required
+            />
+          </p>
+          <p class="text">
+            <input
+              class="validate[required,length[6,300]] feedback-input comment textarea"
+              id="commentField"
+              name="entry.505968409"
+              placeholder="how are you going?"
+              type="text"
+              required
+            />
+          </p>
+
+          <button id="send" type="submit" class="button-blue">
+            send!
+          </button>
+        </form>
+        <a href="./index.html">
+          <h3
+            id="success-msg"
+            style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"
+          >
+            Thanks! I'll get back to you as soon as possible!
+          </h3>
+        </a>
+      </div>
+    </div>
+    <script src="./scripts/contact.js"></script>
   </body>
-  
-    
 </html>
