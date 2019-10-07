@@ -868,36 +868,21 @@ body #sydney {
 
 /* Icons ---------------------------------- */
 #name-input {
-  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
+  background-image: url("../imgs/contact_icons/name.svg");
   background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-}
-
-#name-input:focus {
-  background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-  background-size: 30px 30px;
-  background-position: 8px 5px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
 }
 
 #email {
-  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-  background-size: 30px 30px;
-  background-position: 11px 8px;
-  background-repeat: no-repeat;
-}
-
-#email:focus {
-  background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
+  background-image: url("../imgs/contact_icons/letter.svg");
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
 }
 
 #comment {
-  background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
+  background-image: url("../imgs/contact_icons/pencil.svg");
   background-size: 30px 30px;
   background-position: 11px 8px;
   background-repeat: no-repeat;
@@ -917,7 +902,7 @@ textarea:focus {
   background-color: white;
 }
 
-#button-blue {
+.submit #button-blue {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   float: left;
   width: 100%;
@@ -939,9 +924,18 @@ textarea:focus {
   background-color: rgba(0, 0, 0, 0);
   color: #0493bd;
 }
+.submit {
+  -webkit-border-radius: 7px;
+  border-radius: 17px;
+}
 
 .submit:hover {
   color: #3498db;
+}
+
+.submit:hover .ease {
+  width: 100%;
+  background-color: white;
 }
 
 .ease {
@@ -953,22 +947,7 @@ textarea:focus {
   -o-transition: 0.3s ease;
   -ms-transition: 0.3s ease;
   transition: 0.3s ease;
-}
-
-.submit:hover .ease {
-  width: 100%;
-  background-color: white;
-}
-
-@media only screen and (max-width: 580px) {
-  #form-div {
-    left: 3%;
-    margin-right: 3%;
-    width: 88%;
-    margin-left: 0;
-    padding-left: 3%;
-    padding-right: 3%;
-  }
+  border-radius: 7px;
 }
 
 /* ------------------------------------------------- RESPONSIVE STYLINGS */
@@ -1203,6 +1182,15 @@ textarea:focus {
   #slides .slide .title {
     position: absolute;
     top: 51%;
+  }
+  /* -------------------------------------------------------CONTACT FORM */
+  #form-div {
+    left: 3%;
+    margin-right: 3%;
+    width: 88%;
+    margin-left: 0;
+    padding-left: 3%;
+    padding-right: 3%;
   }
 }
 /*  */
