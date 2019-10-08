@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css?family=Crimson+Text|Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-wrapper {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#heading {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+section:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* End of Common Styling */
+
+.logo {
+  height: 70vh;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  background-size: cover;
+  float: right;
+  transition: width 0.5s;
+}
+
+header div.center-text {
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+header div.center-text h1 {
+  font-size: 300%;
+  margin-bottom: 2%;
+  color: #7acd53;
+  font-family: "Luckiest Guy", cursive;
+  text-shadow: 1px 1px 2px black;
+}
+
+.jump {
+  color: #99c24d;
+}
+
+.goose {
+  color: #f4998d;
+}
+
+.jgj-icon {
+  margin: 2% auto;
+}
+
+header div.center-text a {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  margin-right: 1%;
+  transition: background 0.15s;
+}
+
+.upcoming-text {
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+header label i.fa-ellipsis-v {
+  font-size: 2.6rem;
+  padding: 10px;
+  color: #000;
+  background: #fff;
+  transition: background 0.2s;
+}
+
+header label i.fa-ellipsis-v:hover {
+  background: #000;
+  color: #fff;
+}
+
+header nav.header-nav {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  opacity: 1;
+  width: 20%;
+  height: 100vh;
+  background: #fff;
+  transition: left 0.45s;
+  border-right: 1px solid #000;
+  box-shadow: 1px 2px 6px #888;
+  z-index: 7;
+}
+
+header nav.header-nav ul {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+header nav.header-nav ul li {
+  margin-bottom: 5%;
+  border-bottom: 1px solid #c2dde6;
+  padding-bottom: 3%;
+  padding-left: 5%;
+}
+
+header nav.header-nav ul li:last-of-type {
+  border-bottom: none;
+}
+
+header nav.header-nav ul li a {
+  display: inline-block;
+  padding: 5% 0 0 3%;
+  border-top: 2px solid transparent;
+  color: #000;
+  font-weight: bold;
+  width: 80%;
+  transition: color 0.2s, border-top 0.2s;
+}
+
+header nav.header-nav ul li a:hover {
+  color: #333;
+}
+
+input#nav-control:checked ~ div.header-clear header {
+  width: 80%;
+}
+
+input#nav-control:checked ~ div.header-clear header nav.header-nav {
+  left: 0;
+}
+
+div.header-clear:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.menu-social-icon {
+  display: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.canada {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
+.canada img {
+  position: fixed;
+  bottom: 0;
+}
+
+/* End of Gallery Section */
+footer {
+  width: 100%;
+  padding: 1% auto 1% auto;
+  background-color: #fff;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer-container {
+  margin: 10px auto;
+  padding: 0 auto;
+}
+
+footer p {
+  font-family: "Raleway", sans-serif;
+  width: 80%;
+  margin: auto;
+  padding: 0.5% 0 0.5% 0;
+  overflow: hidden;
+  font-size: 0.8em;
+  text-align: center;
+  color: #000;
+}
+
+/* Start of contact page */
+
+.newGameDesc {
+  margin: -90px 0 20px 0;
+}
+
+.logosmall {
+  margin-top: 30px 0;
+  height: 35vh;
+}
+
+.logosmall:hover {
+  text-decoration: none;
+}
+
+.contact-h1 {
+  margin-top: 20px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.contact-p {
+  font-family: "Raleway", sans-serif;
+  text-transform: none;
+  line-height: 1.8;
+}
+
+.insta {
+  color: #e4405f;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+.faceb {
+  color: #3b5998;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+.twitt {
+  color: #4099ff;
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+}
+
+/* Start of current apps page */
+
+img.bouncyp {
+  width: 150px;
+}
+
+.bouncyp-title {
+  font-family: "Fredoka One", cursive;
+  margin: 10px auto;
+}
+
+.appdesc {
+  font-size: 22px;
+  text-transform: none;
+  line-height: 1.5;
+}
+
+img.playlogo {
+  height: 50px;
+  margin-top: 20px;
+}
+
+.boun {
+  color: #e84b3b;
+}
+
+.plat {
+  color: #38b667;
+}
+
+.featBox {
+  margin: 0 auto;
+  align-items: left;
+}
+
+.features {
+  display: flex;
+  margin-left: 37%;
+}
+
+/* Social Media Section */
+
+section.social-icons ul li a i span {
+  margin-left: 10%;
+  margin-top: 100px;
+}
+
+section.social-icons ul li a i.fa {
+  position: fixed;
+  right: -14%;
+  width: 15%;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 2px 5px 5px #888;
+  font-size: 130%;
+  z-index: 1000;
+  transition: right 0.4s, box-shadow 0.4s;
+}
+
+section.social-icons ul li a i.fa-instagram {
+  top: 30%;
+  background: #e4405f;
+}
+
+section.social-icons ul li a i.fa-facebook {
+  top: 40%;
+  background: #3b5998;
+}
+
+section.social-icons ul li a i.fa-twitter {
+  top: 50%;
+  background: #4099ff;
+}
+
+section.social-icons ul li a i.fa:hover {
+  right: -3%;
+  box-shadow: 2px 5px 5px #888;
+}
+
+.social-icons {
+  display: flex;
+  justify-items: space-around;
+}
+
+/*PRIVACY PAGE */
+
+.container .privacy-c {
+  width: 80%;
+  margin-left: 10%;
+}
