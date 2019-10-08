@@ -336,9 +336,7 @@ h2:first-of-type {
   width: 55px;
 }
 
-/* ------------------------------------------------------  CONTACT PAGE */
-
-/* ------------------------------------------------------------Icons*/
+/* ------------------------------------------------------------ DOWN ARROW*/
 
 .down-arrow {
   margin-top: 1rem;
@@ -755,7 +753,7 @@ body #sydney {
 .comment:active {
   background-image: url("../imgs/contact_icons/pencil.svg");
   background-size: 30px 30px;
-  background-position: 11px 50%;
+  background-position: 11px 8px;
   background-repeat: no-repeat;
 }
 
@@ -808,6 +806,13 @@ textarea:focus {
 
 .submit:hover {
   color: #3498db;
+}
+
+#success-msg {
+  text-align: center !important;
+  margin-top: 190px !important;
+  display: none;
+  color: #fff;
 }
 
 .submit:hover .ease {
@@ -1076,6 +1081,9 @@ textarea:focus {
 /* ----------------------------------------------------DESKTOP SIZE */
 /*  */
 @media (min-width: 1020px) and (orientation: landscape) {
+  .main-photo {
+    top: 12%;
+  }
   .swinger {
     font-size: 2.2rem;
     margin-top: 15px;
@@ -1181,7 +1189,7 @@ textarea:focus {
     /* right: 60%; */
     align-self: right;
     bottom: 75%;
-    right: 20%;
+    right: 40%;
   }
   .see-the-hat {
     animation-duration: 3.5s;

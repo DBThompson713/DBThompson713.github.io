@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -22,7 +25,7 @@
           target="_self"
           onsubmit="return postToGoogle();"
           action=""
-          autocomplete="off"
+          autocomplete="on"
         >
           <p class="name">
             <input
@@ -45,14 +48,14 @@
             />
           </p>
           <p class="text">
-            <input
+            <textarea
               class="validate[required,length[6,300]] feedback-input comment textarea"
               id="commentField"
               name="entry.505968409"
               placeholder="how are you going?"
               type="text"
               required
-            />
+            ></textarea>
           </p>
 
           <button id="send" type="submit" class="button-blue">
@@ -60,11 +63,9 @@
           </button>
         </form>
         <a href="./index.html">
-          <h3
-            id="success-msg"
-            style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"
-          >
-            Thanks! I'll get back to you as soon as possible!
+          <h3 id="success-msg">
+            Thanks, your message has been sent. &nbsp;&nbsp;&nbsp;I'll get back
+            to you as soon as possible!
           </h3>
         </a>
       </div>
