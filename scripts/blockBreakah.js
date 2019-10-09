@@ -189,7 +189,7 @@ if (!isMobile()) {
             score++;
 
             if (score == brickRowCount * brickColumnCount) {
-              alert("Congratulations! You Win!");
+              alert("You Win!");
               document.location.reload(true);
             }
           }

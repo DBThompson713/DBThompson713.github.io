@@ -13,19 +13,22 @@ body {
 
 .no_mobile {
   width: 70%;
-  margin: 70% auto 0 auto;
+  margin: 50% auto 0 auto;
   align-items: center;
   justify-content: center;
 }
 
 .game_content {
-  margin-top: 5%;
+  margin-top: 1.5%;
   height: 100vh;
   display: none;
 }
-@media (min-width: 800px) and (orientation: landscape) {
+@media (min-width: 800px) and (min-height: 600px) and (orientation: landscape) {
   .game_content {
     display: block;
+  }
+  .game_content h1 {
+    display: none;
   }
   .no_mobile {
     display: none;
@@ -34,6 +37,12 @@ body {
     position: absolute;
     bottom: 3%;
     left: 35%;
+  }
+}
+
+@media (min-width: 1020px) and (orientation: landscape) {
+  .game_content h1 {
+    display: block;
   }
 }
 
