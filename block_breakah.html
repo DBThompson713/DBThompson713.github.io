@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,  minimum-scale=1, maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Block Breakah</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/gamestyles.css" />
+  </head>
+  <body>
+    <img
+      class="turnDeviceNotification"
+      src="./imgs/turn_device.jpg"
+      alt="screen turn"
+    />
+    <a href="index.html" class="index">
+      <span class="angle-bracket">&lt;</span>X<span class="angle-bracket"
+        >&gt;</span
+      >
+    </a>
+    <!-- NO MOBILE -->
+    <div class="no_mobile">
+      <h2 class="game_message">
+        Sorry, this game isn't designed for mobile devices.
+      </h2>
+      <p>please visit this page on your laptop or desktop.</p>
+      <p>or visit:</p>
+      <a
+        href="https://github.com/DBThompson713/blockBreakah"
+        target="_blank"
+        class="bold breakah_link"
+      >
+        <h3>
+          <span class="angle-bracket">&lt;</span>Block Breakah on Github<span
+            class="angle-bracket"
+            >&gt;</span
+          >
+        </h3>
+      </a>
+    </div>
+    <!-- GAME CONTENT -->
+    <section class="game_content">
+      <h1>Block Breakah</h1>
+      <canvas id="gameboard" width="560" height="450"></canvas>
+      <button id="reset">Reset</button>
+      <a
+        href="https://github.com/DBThompson713/blockBreakah"
+        target="_blank"
+        class="bold"
+      >
+        <h3>
+          <span class="angle-bracket">&lt;</span>Block Breakah on Github<span
+            class="angle-bracket"
+            >&gt;</span
+          >
+        </h3>
+      </a>
+    </section>
+
+    <script src="./scripts/blockBreakah.js"></script>
+  </body>
+</html>
