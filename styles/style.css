@@ -26,6 +26,10 @@ body {
   display: none;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .main-page-bio {
   visibility: hidden;
   opacity: 0;
