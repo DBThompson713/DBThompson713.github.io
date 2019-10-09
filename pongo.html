@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0,  minimum-scale=1, maximum-scale=1,user-scalable=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Block Breakah</title>
+    <title>Pong0</title>
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/gamestyles.css" />
   </head>
@@ -23,19 +23,19 @@
       >
     </a>
     <!-- NO MOBILE -->
-    <div class="no_mobile">
-      <h2 class="game_message">
+    <div class="no_mobile2">
+      <h2 class="game_message game_message2">
         Sorry, this game isn't available on mobile.
       </h2>
       <p>please visit this page on your laptop or desktop.</p>
       <p>or visit:</p>
       <a
-        href="https://github.com/DBThompson713/blockBreakah"
+        href="https://github.com/DBThompson713/Pongo"
         target="_blank"
         class="bold breakah_link"
       >
         <h3>
-          <span class="angle-bracket">&lt;</span>Block Breakah on Github<span
+          <span class="angle-bracket">&lt;</span>Pongo on Github<span
             class="angle-bracket"
             >&gt;</span
           >
@@ -43,17 +43,20 @@
       </a>
     </div>
     <!-- GAME CONTENT -->
-    <section class="game_content">
-      <h1 id="block_title">Block Breakah</h1>
-      <canvas id="gameboard" width="560" height="450"></canvas>
-      <button id="reset">Reset</button>
+    <section class="game_content pongo_content">
+      <h1>Pong0</h1>
+      <h1 class="pongo_score">
+        <span id="humanscore"> 0 </span> - <span id="compscore"> 0 </span><br />
+      </h1>
+      <canvas id="gameCanvas" width="850" height="510"></canvas>
+      <h1><button id="reset">Reset</button></h1>
       <a
-        href="https://github.com/DBThompson713/blockBreakah"
+        href="https://github.com/DBThompson713/Pongo"
         target="_blank"
         class="bold"
       >
         <h3>
-          <span class="angle-bracket">&lt;</span>Block Breakah on Github<span
+          <span class="angle-bracket">&lt;</span>Pongo on Github<span
             class="angle-bracket"
             >&gt;</span
           >
@@ -61,6 +64,6 @@
       </a>
     </section>
 
-    <script src="./scripts/blockBreakah.js"></script>
+    <script src="./scripts/pongo.js"></script>
   </body>
 </html>
