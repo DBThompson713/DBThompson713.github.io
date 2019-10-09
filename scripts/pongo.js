@@ -63,13 +63,6 @@ function ballReset() {
   ballY = canvas.height / 2;
 }
 
-//function reset() {
-//  humscore = 0;
-//  comscore = 0;
-//  humanscore.textContent = humScore;
-//  compscore.textContent = comScore;
-//}
-
 function drawEverything() {
   if (winScreen) {
     if ((humScore = WIN_SCORE)) {
@@ -80,7 +73,7 @@ function drawEverything() {
     canvasContext.fillText("Click to Continue", 350, 500);
     return;
   }
-  colorRect(0, 0, canvas.width, canvas.height, "#222");
+  colorRect(0, 0, canvas.width, canvas.height, "rgba(15,15,15,0.3");
   drawNet();
   //left Paddle
   colorRect(0, paddle1Y, PADDLE_THICKNESS, PADDLE_HEIGHT, "#0095dd");
