@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
 
-/* --------------------------------BLOCK BREAKER */
-
 body {
   background: url("../imgs/blog_bg2.jpg") no-repeat;
   background-size: cover;
@@ -19,7 +17,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .no_mobile2 {
   width: 70%;
   margin: 40% auto 0 auto;
@@ -33,44 +30,52 @@ body {
   display: none;
 }
 
-#gameboard {
-  background-color: #222;
-  display: block;
-  margin: 0 auto;
-  border: 1px solid #0095dd;
-  border-radius: 5px;
+.pongo_content h1:first-of-type {
+  font-size: 2.3rem;
+  margin-top: 0;
+}
+
+.pongo_score {
+  font-size: 2.1rem;
+  margin: 5px 0;
+  line-height: 70%;
+}
+
+span {
+  margin-bottom: 5px;
+}
+
+#gameCanvas {
+  height: 60vh;
+  width: 60vw;
 }
 
 #reset {
-  color: #fff;
-  background: none;
+  font-family: inherit;
   border: none;
-  font-size: 2rem;
-  margin-top: 5px;
+  background: none;
   text-transform: uppercase;
-  outline: none;
-  font-family: "Orbitron", sans-serif;
-}
-
-#reset:hover {
-  color: steelblue;
+  height: 100%;
+  color: #fff;
+  font-weight: normal;
+  letter-spacing: 1px;
+  font-size: 1.7rem;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
+  outline: none;
 }
 
-.yellow {
-  background: rgba(255, 255, 0, 0.3);
+#reset:hover {
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  color: steelblue;
 }
-
-.red {
-  background: rgba(255, 0, 0, 0.3);
+canvas {
+  border: 1px solid #0095dd;
+  border-radius: 5px;
 }
-
-/* -------------------------------------------------------------PONG0 */
-
-/* -------------------------------------------------------------RESPONSIVE DESIGN */
-
 @media (min-width: 650px) {
   .pongo_content {
     display: block;
