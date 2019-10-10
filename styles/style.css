@@ -1028,6 +1028,11 @@ textarea:focus {
     width: 150px;
     margin-top: 30%;
   }
+
+  .linkedin {
+    border-radius: 40px;
+  }
+
   #bio-tag {
     position: absolute;
     top: 75%;
